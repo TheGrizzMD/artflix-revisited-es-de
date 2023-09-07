@@ -1,0 +1,335 @@
+<!--
+    Variant - Default
+-->
+
+<theme> 
+
+    <include>./navigationsounds.xml</include>
+    
+        <include>${rootpath}/core/metadata-global/_default.xml</include>
+        <include>${rootpath}/core/metadata-global/${system.theme}.xml</include>
+    
+        <variables>
+            <rootpath>./</rootpath>
+            <systemPromoImage>${rootpath}/${system.theme}/images/promo.jpg</systemPromoImage>
+            <systemLogo>${rootpath}/${system.theme}/images/logo.png</systemLogo>
+        </variables>
+    
+        <view name="system">
+            <image name="systembackgroundoverlay">
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${rootpath}/core/images/artflix.png</path>
+                <color>959595FF</color>
+                <zIndex>11</zIndex>
+            </image>
+            <image name="backgroundpromo">
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${systemPromoImage}</path>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>9</zIndex>
+            </image>
+            <gameselector name="randomselection">
+            </gameselector>
+
+            <!---This is the video element a big video in the upper right.  I need to move this to a new variant.
+                It would also be nice if there was a way to delay the video and use the system fanart instead of game fanarts
+            <video name="systembackgroundvideo">
+                <pos>1 0</pos>
+                <maxSize>.75 .75</maxSize>
+                <origin>1 0</origin>
+                <imageType>fanart, screenshot, titlescreen, cover</imageType>
+                <delay>1.5</delay>
+                <zIndex>10</zIndex>
+            </video>-->
+
+            <video name="systembackgroundvideo">
+                <pos>.1925 0.625</pos>
+                <size>0 .3</size>
+                <origin>0.5 .5</origin>
+                <zIndex>12</zIndex>
+            </video>
+            <carousel name="systemCarousel">
+                <pos>0 0.67</pos>
+                <size>1 0.4</size>
+                <type>horizontal</type>
+                <horizontalOffset>-.31</horizontalOffset>
+                <staticImage>${rootpath}/${system.theme}/images/logo.png</staticImage>
+                <defaultImage>${rootpath}/${system.theme}/images/logo.svg</defaultImage>
+                <maxItemCount>3</maxItemCount>
+                <itemSize>0.2 0.1</itemSize>
+                <itemScale>1.35</itemScale>
+                <imageInterpolation>linear</imageInterpolation>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.055</fontSize>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1.2</lineSpacing>
+                <selectedItemMargins>.02 .02</selectedItemMargins>
+                <!--<imageBrightness>.25</imageBrightness>-->
+                <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+                <unfocusedItemDimming>.5</unfocusedItemDimming>
+                <fastScrolling>true</fastScrolling>
+            </carousel>
+            <text name="system-name">
+                <systemdata>fullname</systemdata>
+                <pos>0.023 0.0175</pos>
+                <size>0.4 0.2</size>
+                <fontSize>0.065</fontSize>
+                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
+                <lineSpacing>1.1</lineSpacing>
+                <color>FFFFFF</color>
+                <verticalAlignment>bottom</verticalAlignment>
+                <!--<container>true</container>-->
+                <letterCase>uppercase</letterCase>
+             </text>
+             <text name="system-year">
+                <text>Released: ${systemReleaseYear}</text>
+                <pos>0.023 0.26</pos>
+                <size>0.4 0</size>
+                <fontSize>0.024</fontSize>
+                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
+                <lineSpacing>1.1</lineSpacing>
+                <color>FFFFFF</color>
+                <verticalAlignment>center</verticalAlignment>
+                <horizontalAlignment>right</horizontalAlignment>
+             </text>
+             <!--<text name="system-manufacturer">
+                <text>System Manufacturer: ${systemManufacturer}</text>
+                <pos>0.023 0.26</pos>
+                <size>0.4 0</size>
+                <fontSize>0.024</fontSize>
+                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
+                <lineSpacing>1.1</lineSpacing>
+                <color>FFFFFF</color>
+                <verticalAlignment>center</verticalAlignment>
+                <horizontalAlignment>right</horizontalAlignment>
+             </text>-->
+             <text name="system-description">
+                <text>${systemDescription}</text>
+                <pos>0.023 0.29</pos>
+                <size>0.4 0.18</size>
+                <fontSize>0.024</fontSize>
+                <lineSpacing>1.1</lineSpacing>
+                <color>BBBBBB</color>
+                <verticalAlignment>top</verticalAlignment>
+                <container>true</container>
+             </text>
+             <text name="gameCount">
+                <pos>0.023 0.26</pos>
+                <size>0.4 0</size>
+                <!--<pos>0.75 0.86</pos>
+                <size>0.2 0.2</size>-->
+                <systemdata>gamecount</systemdata>
+                <fontSize>0.024</fontSize>
+                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
+                <lineSpacing>1.1</lineSpacing>
+                <horizontalAlignment>left</horizontalAlignment>
+                <color>FFFFFF</color>
+             </text>
+        </view>
+        
+        <aspectRatio name="16:10">
+            <view name="system">
+                <image name="backgroundpromo">
+                    <pos>-.03 0</pos>
+                    <size>0 1</size>
+                </image>
+            </view>
+        </aspectRatio>
+    
+        <view name="gamelist">
+            <image name="gamelistbackgroundoverlay">
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${rootpath}/core/images/artflixgamelistoverlay.png</path>
+                <color>959595FF</color>
+                <zIndex>45</zIndex>
+            </image>
+            
+            <video name="gamevideo">
+                <pos>1 0</pos>
+                <cropSize>.6 .75</cropSize>
+                <origin>1 0</origin>
+                <imageType>fanart, screenshot, titlescreen, cover</imageType>
+                <delay>1</delay>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>30</zIndex>
+            </video>
+            
+            <image name="game-logo">
+                <pos>0.023 0.255</pos>
+                <origin>0 1</origin>
+                <maxSize>0.3 0.2</maxSize>
+                <imageType>marquee</imageType>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>46</zIndex>
+            </image>
+            <text name="descriptiontext">
+                <pos>0.023 0.27</pos>
+                <size>0.4 0.18</size>
+                <metadata>description</metadata>
+                <container>true</container>
+                <fontSize>0.024</fontSize>
+                <color>BBBBBB</color>
+                <lineSpacing>1.1</lineSpacing>
+                <verticalAlignment>top</verticalAlignment>
+                <zIndex>46</zIndex>
+            </text>
+
+            <rating name="ratinggraphic">
+                <pos>.023 .46</pos>
+                <origin>0 0.5</origin>
+                <size>0 0.04</size>
+                <filledPath>${rootpath}/core/images/star_filled.svg</filledPath>
+                <unfilledPath>${rootpath}/core/images/star_unfilled.svg</unfilledPath>
+                <color>FFFFFF</color>
+                <zIndex>65</zIndex>
+            </rating>
+            <image name="players-icon">
+                <pos>.0265 .4935</pos>
+                <origin>0 .5</origin>
+                <maxSize>.027 .027</maxSize>
+                <path>${rootpath}/core/images/icon-players.svg</path>
+                <color>FFFFFF</color>
+                <metadataElement>true</metadataElement>
+                <zIndex>65</zIndex>
+            </image>
+            <text name="players">
+                <pos>.0465 .4935</pos>
+                <origin>0 .5</origin>
+                <size>.1 .018</size>
+                <fontSize>.02</fontSize>
+                <metadata>players</metadata>
+                <defaultValue>Unknown</defaultValue>
+                <color>FFFFFF</color>
+                <lineSpacing>1</lineSpacing>
+                <zIndex>65</zIndex>
+            </text>
+            <image name="developer-icon">
+                <pos>.0265 .5270</pos>
+                <origin>0 .5</origin>
+                <maxSize>.027 .027</maxSize>
+                <path>${rootpath}/core/images/icon-developer.svg</path>
+                <color>FFFFFF</color>
+                <metadataElement>true</metadataElement>
+                <zIndex>65</zIndex>
+             </image>
+             <text name="developer">
+                <pos>.0465 .527</pos>
+                <origin>0 .5</origin>
+                <size>.1 .018</size>
+                <fontSize>.02</fontSize>
+                <metadata>developer</metadata>
+                <defaultValue>Unknown</defaultValue>
+                <color>FFFFFF</color>
+                <lineSpacing>1</lineSpacing>
+                <zIndex>65</zIndex>
+             </text>
+             <image name="publisher-icon">
+                <pos>.0265 .5605</pos>
+                <origin>0 .5</origin>
+                <maxSize>.027 .027</maxSize>
+                <path>${rootpath}/core/images/icon-publisher.svg</path>
+                <color>FFFFFF</color>
+                <metadataElement>true</metadataElement>
+                <zIndex>65</zIndex>
+             </image>
+             <text name="publisher">
+                <pos>.0465 .5605</pos>
+                <origin>0 .5</origin>
+                <size>.1 .018</size>
+                <fontSize>.02</fontSize>
+                <metadata>publisher</metadata>
+                <defaultValue>Unknown</defaultValue>
+                <color>FFFFFF</color>
+                <lineSpacing>1</lineSpacing>
+                <zIndex>65</zIndex>
+             </text>
+
+
+            <carousel name="gamelistCarousel">
+                <pos>.5 1</pos>
+                <origin>.5 1</origin>
+                <size>1 .4</size>
+                <type>horizontal</type>
+                <imageType>cover</imageType>
+                <maxItemCount>8</maxItemCount>
+                <itemSize>0.125 0.25</itemSize>
+                <itemScale>1.5</itemScale>
+                <imageInterpolation>linear</imageInterpolation>
+                <itemAxisHorizontal>true</itemAxisHorizontal>
+                <itemHorizontalAlignment>center</itemHorizontalAlignment>
+                <itemVerticalAlignment>center</itemVerticalAlignment>
+                <horizontalOffset>-.375</horizontalOffset>
+                <fastScrolling>true</fastScrolling>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.046</fontSize>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1.2</lineSpacing>
+                <unfocusedItemOpacity>1</unfocusedItemOpacity>
+                <zIndex>50</zIndex>
+            </carousel>
+        
+
+            <gamelistinfo name="gamelistInfo">
+                <pos>0.9 0.95</pos>
+                <size>w 0.02</size>
+                <fontSize>0.025</fontSize>
+                <fontPath>${rootpath}/core/fonts/Exo2-RegularCondensed.otf</fontPath>
+                <horizontalAlignment>right</horizontalAlignment>
+                <verticalAlignment>bottom</verticalAlignment>
+                <color>BBBBBB</color>
+                <zIndex>65</zIndex>
+            </gamelistinfo>
+            <badges name="badges">
+                <pos>0.325 0.205</pos>
+                <size>.2 .1</size>
+                <horizontalAlignment>left</horizontalAlignment>
+                <direction>column</direction>
+                <lines>2</lines>
+                <itemsPerLine>2</itemsPerLine>
+                <slots>favorite</slots>
+                <customBadgeIcon badge="favorite">${rootpath}/core/images/yes.png</customBadgeIcon>
+                <controllerPos>0.5 0.572</controllerPos>
+                <controllerSize>0.81</controllerSize>
+                <folderLinkPos>0.54 0.64</folderLinkPos>
+                <folderLinkSize>0.31</folderLinkSize>
+                <itemMargin>-1.0 0.005</itemMargin>
+                <zIndex>65</zIndex>
+            </badges>
+        </view>
+        
+        
+        <aspectRatio name="16:10">
+            <view name="gamelist">
+                <image name="coverfanartfallback">
+                    <pos>1 .5</pos>
+                    <origin>.878 .5</origin>
+                    <maxSize>1.5 1</maxSize>
+                </image>
+            </view>
+        </aspectRatio>
+    
+        
+        <view name="system, gamelist">
+            <helpsystem name="help">
+                <!--
+                    <pos>0.012 0.957</pos>
+                -->
+                <pos>0.5 0.96</pos>
+                <origin>0.5 0</origin>
+                <textColor>FFFFFF</textColor>
+                <iconColor>FFFFFF</iconColor>
+                <fontSize>0.025</fontSize>
+                <fontPath>${rootpath}/core/fonts/Exo2-RegularCondensed.otf</fontPath>
+                <iconTextSpacing>0.003</iconTextSpacing>
+                <originDimmed>0.5 0</originDimmed>
+                <posDimmed>0.5 0.96</posDimmed>
+                <opacity>.35</opacity>
+            </helpsystem>
+        </view>
+    </theme>
