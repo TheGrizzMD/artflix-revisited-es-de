@@ -30,6 +30,12 @@
         <transitions>fadeAndSlide</transitions>
     </variant>
 
+    <variant name="TopCarousel">
+        <label>Top Carousel</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+
     <variant name="Immersive">
         <label>Immersive</label>
         <selectable>true</selectable>

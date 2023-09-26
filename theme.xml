@@ -8,6 +8,10 @@
         <include>./default.xml</include>
     </variant>
 
+    <variant name="TopCarousel">
+        <include>./topcarousel.xml</include>
+    </variant>
+
     <variant name="Immersive">
         <include>./immersive.xml</include>
     </variant>

@@ -16,13 +16,15 @@
         </variables>
     
         <view name="system">
+            
             <image name="systembackgroundoverlay">
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>${rootpath}/core/images/artflix.png</path>
+                <path>${rootpath}/core/images/topcarouseloverlay.png</path>
                 <color>959595FF</color>
                 <zIndex>11</zIndex>
             </image>
+        
             <image name="backgroundpromo">
                 <pos>0 0</pos>
                 <size>1 1</size>
@@ -32,23 +34,36 @@
                 <zIndex>9</zIndex>
             </image>
 
-            
-            <text name="system-name">
-                <systemdata>fullname</systemdata>
-                <pos>0.053 0.06</pos>
-                <size>0.4 0.2</size>
-                <fontSize>0.065</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
-                <lineSpacing>1.1</lineSpacing>
-                <color>FFFFFF</color>
-                <verticalAlignment>bottom</verticalAlignment>
-                <container>true</container>
-                <containerStartDelay>1</containerStartDelay>
-                <containerResetDelay>2</containerResetDelay>
+            <carousel name="systemCarousel">
+                <pos>0 0</pos>
+                <size>1 0.25</size>
+                <type>horizontal</type>
+                <horizontalOffset>-.26</horizontalOffset>
+                <verticalOffset>-.05</verticalOffset>
+                <staticImage>${rootpath}/${system.theme}/images/logo.png</staticImage>
+                <defaultImage>${rootpath}/${system.theme}/images/logo.svg</defaultImage>
+                <maxItemCount>3</maxItemCount>
+                <itemSize>0.25 0.15</itemSize>
+                <itemScale>1.5</itemScale>
+                <imageInterpolation>linear</imageInterpolation>
+                <itemVerticalAlignment>bottom</itemVerticalAlignment>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.055</fontSize>
                 <letterCase>uppercase</letterCase>
-            </text>
+                <lineSpacing>1.2</lineSpacing>
+                <selectedItemMargins>.02 .02</selectedItemMargins>
+                <!--<imageBrightness>.25</imageBrightness>-->
+                <!--<reflections>true</reflections>
+                <reflectionsOpacity>.25</reflectionsOpacity>
+                <reflectionsFalloff>1.25</reflectionsFalloff>-->
+                <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+                <unfocusedItemDimming>.5</unfocusedItemDimming>
+                <fastScrolling>true</fastScrolling>
+            </carousel>
+
             <text name="gameCount">
-                <pos>0.053 0.21</pos>
+                <pos>0.053 0.26</pos>
                 <size>0.4 0</size>
                 <!--<pos>0.75 0.86</pos>
                 <size>0.2 0.2</size>-->
@@ -61,7 +76,7 @@
              </text>
             <text name="system-year">
                 <text>${systemReleaseYear}</text>
-                <pos>0.053 0.21</pos>
+                <pos>0.053 0.26</pos>
                 <size>0.4 0</size>
                 <fontSize>0.024</fontSize>
                 <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -72,7 +87,7 @@
             </text>
             <text name="system-description">
                 <text>${systemDescription}</text>
-                <pos>0.053 0.24</pos>
+                <pos>0.053 0.29</pos>
                 <size>0.4 0.18</size>
                 <fontSize>0.024</fontSize>
                 <lineSpacing>1.1</lineSpacing>
@@ -83,8 +98,8 @@
             <gameselector name="randomselection">
             </gameselector>
             <video name="systembackgroundvideo">
-                <pos>0.1925 0.565</pos>
-                <size>0 0.3</size>
+                <pos>0.2525 0.7</pos>
+                <size>0 0.4</size>
                 <origin>0.5 0.5</origin>
                 <zIndex>12</zIndex>
             </video>
@@ -99,34 +114,7 @@
                 <delay>1.5</delay>
                 <zIndex>10</zIndex>
             </video>-->
-
-            <carousel name="systemCarousel">
-                <pos>0 0.70</pos>
-                <size>1 0.4</size>
-                <type>horizontal</type>
-                <horizontalOffset>-.31</horizontalOffset>
-                <verticalOffset>-.05</verticalOffset>
-                <staticImage>${rootpath}/${system.theme}/images/logo.png</staticImage>
-                <defaultImage>${rootpath}/${system.theme}/images/logo.svg</defaultImage>
-                <maxItemCount>3</maxItemCount>
-                <itemSize>0.2 0.125</itemSize>
-                <itemScale>1.35</itemScale>
-                <imageInterpolation>linear</imageInterpolation>
-                <color>00000000</color>
-                <textColor>BBBBBB</textColor>
-                <fontSize>0.055</fontSize>
-                <letterCase>uppercase</letterCase>
-                <lineSpacing>1.2</lineSpacing>
-                <selectedItemMargins>.02 .02</selectedItemMargins>
-                <!--<imageBrightness>.25</imageBrightness>-->
-                <reflections>true</reflections>
-                <reflectionsOpacity>.25</reflectionsOpacity>
-                <reflectionsFalloff>1.25</reflectionsFalloff>
-                <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
-                <unfocusedItemDimming>.5</unfocusedItemDimming>
-                <fastScrolling>true</fastScrolling>
-            </carousel>
-            
+           
         </view>
         
         <aspectRatio name="16:10">
@@ -156,23 +144,32 @@
                 <zIndex>9</zIndex>
             </image>
 
-            <text name="game-name">
-                <metadata>name</metadata>
-                <pos>0.053 0.06</pos>
-                <size>0.4 0.2</size>
-                <fontSize>0.065</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
-                <lineSpacing>1.1</lineSpacing>
-                <color>FFFFFF</color>
-                <verticalAlignment>bottom</verticalAlignment>
-                <container>true</container>
-                <containerStartDelay>1</containerStartDelay>
-                <containerResetDelay>2</containerResetDelay>
+            <carousel name="gamelistCarousel">
+                <pos>0 0</pos>
+                <size>1 0.25</size>
+                <type>horizontal</type>
+                <horizontalOffset>-.26</horizontalOffset>
+                <verticalOffset>-.05</verticalOffset>
+                <imageType>marquee</imageType>
+                <maxItemCount>4</maxItemCount>
+                <itemSize>0.25 0.15</itemSize>
+                <itemScale>1.5</itemScale>
+                <imageInterpolation>linear</imageInterpolation>
+                <itemVerticalAlignment>bottom</itemVerticalAlignment>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.055</fontSize>
                 <letterCase>uppercase</letterCase>
-            </text>
+                <lineSpacing>1.2</lineSpacing>
+                <selectedItemMargins>.02 .02</selectedItemMargins>
+                <!--<imageBrightness>.25</imageBrightness>-->   
+                <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+                <unfocusedItemDimming>.5</unfocusedItemDimming>
+                <fastScrolling>true</fastScrolling>
+            </carousel>
 
             <rating name="ratinggraphic">
-                <pos>.053 .222</pos>
+                <pos>.053 .262</pos>
                 <origin>0 0.5</origin>
                 <size>0 0.03</size>
                 <filledPath>${rootpath}/core/images/star_filled.svg</filledPath>
@@ -181,7 +178,7 @@
                 <zIndex>65</zIndex>
             </rating>
             <image name="players-icon">
-                <pos>.1465 .223</pos>
+                <pos>.1465 .263</pos>
                 <origin>0 .5</origin>
                 <maxSize>.028 .03</maxSize>
                 <path>${rootpath}/core/images/icon-players.svg</path>
@@ -190,7 +187,7 @@
                 <zIndex>65</zIndex>
             </image>
             <text name="players">
-                <pos>.1665 .223</pos>
+                <pos>.1665 .263</pos>
                 <origin>0 .5</origin>
                 <size>.02 .018</size>
                 <fontSize>.03</fontSize>
@@ -201,7 +198,7 @@
                 <zIndex>65</zIndex>
             </text>
             <badges name="badges">
-                <pos>0.20 0.223</pos>
+                <pos>0.20 0.263</pos>
                 <origin>0 0.5</origin>
                 <size>.1 .028</size>
                 <horizontalAlignment>left</horizontalAlignment>
@@ -214,7 +211,7 @@
             </badges>
 
             <text name="descriptiontext">
-                <pos>0.053 0.24</pos>
+                <pos>0.053 0.29 </pos>
                 <size>0.4 0.18</size>
                 <metadata>description</metadata>
                 <container>true</container>
@@ -267,38 +264,11 @@
              </text>-->
 
              <video name="gamelistbackgroundvideo">
-                <pos>0.1925 0.565</pos>
-                <size>0 0.3</size>
+                <pos>0.2525 0.7</pos>
+                <size>0 0.4</size>
                 <origin>0.5 0.5</origin>
                 <zIndex>46</zIndex>
-            </video>
-
-             <carousel name="gamelistCarousel">
-                <pos>0 0.70</pos>
-                <size>1 0.4</size>
-                <type>horizontal</type>
-                <horizontalOffset>-.31</horizontalOffset>
-                <verticalOffset>-.01</verticalOffset>
-                <imageType>marquee</imageType>
-                <maxItemCount>6</maxItemCount>
-                <itemSize>0.2 0.15</itemSize>
-                <itemScale>1.35</itemScale>
-                <imageInterpolation>linear</imageInterpolation>
-                <color>00000000</color>
-                <textColor>BBBBBB</textColor>
-                <fontSize>0.055</fontSize>
-                <letterCase>uppercase</letterCase>
-                <lineSpacing>1.2</lineSpacing>
-                <selectedItemMargins>.02 .02</selectedItemMargins>
-                <!--<imageBrightness>.25</imageBrightness>-->
-                <reflections>true</reflections>
-                <reflectionsOpacity>.25</reflectionsOpacity>
-                <reflectionsFalloff>1.25</reflectionsFalloff>
-                <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
-                <unfocusedItemDimming>.5</unfocusedItemDimming>
-                <fastScrolling>true</fastScrolling>
-            </carousel>
-        
+            </video>    
 
             <gamelistinfo name="gamelistInfo">
                 <pos>0.9 0.95</pos>
