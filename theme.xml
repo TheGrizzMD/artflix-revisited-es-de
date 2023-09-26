@@ -1,10 +1,14 @@
 <!--
-    CoinOPS (CoinOPS-es-de) Theme
+    Artflix Revisited (artflix-revisited-es-de) Theme
     License: Creative Commons CC-BY-NC-SA
 -->
 
 <theme>
     <variant name="Default">
         <include>./default.xml</include>
+    </variant>
+
+    <variant name="Immersive">
+        <include>./immersive.xml</include>
     </variant>
 </theme>
