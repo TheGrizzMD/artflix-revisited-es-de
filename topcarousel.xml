@@ -24,7 +24,6 @@
                 <color>959595FF</color>
                 <zIndex>11</zIndex>
             </image>
-        
             <image name="backgroundpromo">
                 <pos>0 0</pos>
                 <size>1 1</size>
@@ -103,17 +102,6 @@
                 <origin>0.5 0.5</origin>
                 <zIndex>12</zIndex>
             </video>
-
-            <!---This is the video element a big video in the upper right.  I need to move this to a new variant.
-                It would also be nice if there was a way to delay the video and use the system fanart instead of game fanarts
-            <video name="systembackgroundvideo">
-                <pos>1 0</pos>
-                <maxSize>.75 .75</maxSize>
-                <origin>1 0</origin>
-                <imageType>fanart, screenshot, titlescreen, cover</imageType>
-                <delay>1.5</delay>
-                <zIndex>10</zIndex>
-            </video>-->
            
         </view>
         

@@ -19,7 +19,7 @@
             <image name="systembackgroundoverlay">
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>${rootpath}/core/images/artflix.png</path>
+                <path>${rootpath}/core/images/topcarouseloverlay.png</path>
                 <color>959595FF</color>
                 <zIndex>11</zIndex>
             </image>
@@ -32,19 +32,35 @@
                 <zIndex>9</zIndex>
             </image>
 
-            
-            <text name="system-name">
-                <systemdata>fullname</systemdata>
-                <pos>0.053 0.0175</pos>
-                <size>0.4 0.2</size>
-                <fontSize>0.065</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
-                <lineSpacing>1.1</lineSpacing>
-                <color>FFFFFF</color>
-                <verticalAlignment>bottom</verticalAlignment>
-                <!--<container>true</container>-->
+            <carousel name="systemCarousel">
+                <pos>0 0</pos>
+                <size>1 0.25</size>
+                <type>horizontal</type>
+                <horizontalOffset>-.26</horizontalOffset>
+                <verticalOffset>-.05</verticalOffset>
+                <staticImage>${rootpath}/${system.theme}/images/logo.png</staticImage>
+                <defaultImage>${rootpath}/${system.theme}/images/logo.svg</defaultImage>
+                <maxItemCount>3</maxItemCount>
+                <itemSize>0.25 0.15</itemSize>
+                <itemScale>1.5</itemScale>
+                <imageInterpolation>linear</imageInterpolation>
+                <itemVerticalAlignment>bottom</itemVerticalAlignment>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.055</fontSize>
                 <letterCase>uppercase</letterCase>
-            </text>
+                <lineSpacing>1.2</lineSpacing>
+                <selectedItemMargins>.02 .02</selectedItemMargins>
+                <!--<imageBrightness>.25</imageBrightness>-->
+                <!--<reflections>true</reflections>
+                <reflectionsOpacity>.25</reflectionsOpacity>
+                <reflectionsFalloff>1.25</reflectionsFalloff>-->
+                <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+                <unfocusedItemDimming>.5</unfocusedItemDimming>
+                <fastScrolling>true</fastScrolling>
+            </carousel>
+
+
             <text name="gameCount">
                 <pos>0.053 0.26</pos>
                 <size>0.4 0</size>
@@ -81,48 +97,17 @@
             <gameselector name="randomselection">
             </gameselector>
             <video name="systembackgroundvideo">
-                <pos>0.1925 0.615</pos>
-                <size>0 0.3</size>
-                <origin>0.5 0.5</origin>
-                <zIndex>12</zIndex>
+                <pos>.5 .5</pos>
+                <size>1 0</size>
+                <origin>.5 .5</origin>
+                <imageType>fanart, screenshot, titlescreen, cover</imageType>
+                <pillarboxes>false</pillarboxes>
+                <delay>1</delay>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>10</zIndex>
             </video>
 
-            <!---This is the video element a big video in the upper right.  I need to move this to a new variant.
-                It would also be nice if there was a way to delay the video and use the system fanart instead of game fanarts
-            <video name="systembackgroundvideo">
-                <pos>1 0</pos>
-                <maxSize>.75 .75</maxSize>
-                <origin>1 0</origin>
-                <imageType>fanart, screenshot, titlescreen, cover</imageType>
-                <delay>1.5</delay>
-                <zIndex>10</zIndex>
-            </video>-->
 
-            <carousel name="systemCarousel">
-                <pos>0 0.70</pos>
-                <size>1 0.4</size>
-                <type>horizontal</type>
-                <horizontalOffset>-.31</horizontalOffset>
-                <staticImage>${rootpath}/${system.theme}/images/logo.png</staticImage>
-                <defaultImage>${rootpath}/${system.theme}/images/logo.svg</defaultImage>
-                <maxItemCount>3</maxItemCount>
-                <itemSize>0.2 0.1</itemSize>
-                <itemScale>1.35</itemScale>
-                <imageInterpolation>linear</imageInterpolation>
-                <color>00000000</color>
-                <textColor>BBBBBB</textColor>
-                <fontSize>0.055</fontSize>
-                <letterCase>uppercase</letterCase>
-                <lineSpacing>1.2</lineSpacing>
-                <selectedItemMargins>.02 .02</selectedItemMargins>
-                <!--<imageBrightness>.25</imageBrightness>-->
-                <reflections>true</reflections>
-                <reflectionsOpacity>.25</reflectionsOpacity>
-                <reflectionsFalloff>1.25</reflectionsFalloff>
-                <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
-                <unfocusedItemDimming>.5</unfocusedItemDimming>
-                <fastScrolling>true</fastScrolling>
-            </carousel>
             
         </view>
         
