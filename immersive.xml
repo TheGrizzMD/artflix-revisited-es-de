@@ -114,7 +114,7 @@
             <view name="system">
                 <video name="systembackgroundvideo">
                     <size>0 1</size>
-                </image>
+                </video>
             </view>
         </aspectRatio>
     
