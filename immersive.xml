@@ -107,14 +107,12 @@
                 <zIndex>10</zIndex>
             </video>
 
-
             
         </view>
         
         <aspectRatio name="16:10">
             <view name="system">
-                <image name="backgroundpromo">
-                    <pos>-.03 0</pos>
+                <video name="systembackgroundvideo">
                     <size>0 1</size>
                 </image>
             </view>
