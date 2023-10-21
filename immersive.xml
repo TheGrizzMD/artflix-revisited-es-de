@@ -113,7 +113,7 @@
         <aspectRatio name="16:10">
             <view name="system">
                 <video name="systembackgroundvideo">
-                    <size>1.2 0</size>
+                    <size>1 0</size>
                 </video>
             </view>
         </aspectRatio>
