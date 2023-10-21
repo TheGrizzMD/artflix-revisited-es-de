@@ -19,7 +19,7 @@
             <image name="systembackgroundoverlay">
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>${rootpath}/core/images/defaultsystemgrad.png</path>
+                <path>${rootpath}/core/images/artflix.png</path>
                 <color>959595FF</color>
                 <zIndex>11</zIndex>
             </image>
@@ -35,7 +35,7 @@
             
             <text name="system-name">
                 <systemdata>fullname</systemdata>
-                <pos>0.053 0.16</pos>
+                <pos>0.053 0.06</pos>
                 <size>0.4 0.2</size>
                 <fontSize>0.065</fontSize>
                 <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -48,7 +48,7 @@
                 <letterCase>uppercase</letterCase>
             </text>
             <text name="gameCount">
-                <pos>0.053 0.31</pos>
+                <pos>0.053 0.21</pos>
                 <size>0.4 0</size>
                 <!--<pos>0.75 0.86</pos>
                 <size>0.2 0.2</size>-->
@@ -61,7 +61,7 @@
              </text>
             <text name="system-year">
                 <text>${systemReleaseYear}</text>
-                <pos>0.053 0.31</pos>
+                <pos>0.053 0.21</pos>
                 <size>0.4 0</size>
                 <fontSize>0.024</fontSize>
                 <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -72,7 +72,7 @@
             </text>
             <text name="system-description">
                 <text>${systemDescription}</text>
-                <pos>0.053 0.34</pos>
+                <pos>0.053 0.24</pos>
                 <size>0.4 0.18</size>
                 <fontSize>0.024</fontSize>
                 <lineSpacing>1.1</lineSpacing>
@@ -83,22 +83,32 @@
             <gameselector name="randomselection">
             </gameselector>
             <video name="systembackgroundvideo">
-                <pos>0.053 0.675</pos>
+                <pos>0.1925 0.565</pos>
                 <size>0 0.3</size>
-                <origin>0 0.5</origin>
+                <origin>0.5 0.5</origin>
                 <zIndex>12</zIndex>
             </video>
 
-
+            <!---This is the video element a big video in the upper right.  I need to move this to a new variant.
+                It would also be nice if there was a way to delay the video and use the system fanart instead of game fanarts
+            <video name="systembackgroundvideo">
+                <pos>1 0</pos>
+                <maxSize>.75 .75</maxSize>
+                <origin>1 0</origin>
+                <imageType>fanart, screenshot, titlescreen, cover</imageType>
+                <delay>1.5</delay>
+                <zIndex>10</zIndex>
+            </video>-->
 
             <carousel name="systemCarousel">
-                <pos>1 0.5</pos>
-                <size>0.3 1</size>
-                <origin>1 .5</origin>
-                <type>vertical</type>
+                <pos>0 0.70</pos>
+                <size>1 0.4</size>
+                <type>horizontal</type>
+                <horizontalOffset>-.31</horizontalOffset>
+                <verticalOffset>-.05</verticalOffset>
                 <staticImage>${rootpath}/${system.theme}/images/logo.png</staticImage>
                 <defaultImage>${rootpath}/${system.theme}/images/logo.svg</defaultImage>
-                <maxItemCount>6</maxItemCount>
+                <maxItemCount>3</maxItemCount>
                 <itemSize>0.2 0.125</itemSize>
                 <itemScale>1.35</itemScale>
                 <imageInterpolation>linear</imageInterpolation>
@@ -132,15 +142,9 @@
             <image name="gamelistbackgroundoverlay">
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>${rootpath}/core/images/defaultsystemgrad.png</path>
+                <path>${rootpath}/core/images/artflix.png</path>
                 <color>959595FF</color>
                 <zIndex>11</zIndex>
-            </image>
-            <image name="gamelistforegroundoverlay">
-                <pos>0 0</pos>
-                <size>1 1</size>
-                <path>${rootpath}/core/images/overlay.png</path>
-                <zIndex>55</zIndex>
             </image>
             
             <image name="gamelistfanart">
@@ -154,7 +158,7 @@
 
             <text name="game-name">
                 <metadata>name</metadata>
-                <pos>0.053 0.16</pos>
+                <pos>0.053 0.06</pos>
                 <size>0.4 0.2</size>
                 <fontSize>0.065</fontSize>
                 <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -168,7 +172,7 @@
             </text>
 
             <rating name="ratinggraphic">
-                <pos>.053 .322</pos>
+                <pos>.053 .222</pos>
                 <origin>0 0.5</origin>
                 <size>0 0.03</size>
                 <filledPath>${rootpath}/core/images/star_filled.svg</filledPath>
@@ -177,7 +181,7 @@
                 <zIndex>65</zIndex>
             </rating>
             <image name="players-icon">
-                <pos>.1465 .323</pos>
+                <pos>.1465 .223</pos>
                 <origin>0 .5</origin>
                 <maxSize>.028 .03</maxSize>
                 <path>${rootpath}/core/images/icon-players.svg</path>
@@ -186,7 +190,7 @@
                 <zIndex>65</zIndex>
             </image>
             <text name="players">
-                <pos>.1665 .323</pos>
+                <pos>.1665 .223</pos>
                 <origin>0 .5</origin>
                 <size>.02 .018</size>
                 <fontSize>.03</fontSize>
@@ -197,7 +201,7 @@
                 <zIndex>65</zIndex>
             </text>
             <badges name="badges">
-                <pos>0.20 0.323</pos>
+                <pos>0.20 0.223</pos>
                 <origin>0 0.5</origin>
                 <size>.1 .028</size>
                 <horizontalAlignment>left</horizontalAlignment>
@@ -210,14 +214,14 @@
             </badges>
 
             <text name="descriptiontext">
-                <pos>0.053 0.34</pos>
+                <pos>0.053 0.24</pos>
                 <size>0.4 0.18</size>
                 <metadata>description</metadata>
-                <fontSize>0.024</fontSize>
-                <lineSpacing>1.1</lineSpacing>
-                <color>BBBBBB</color>
-                <verticalAlignment>top</verticalAlignment>
                 <container>true</container>
+                <fontSize>0.024</fontSize>
+                <color>BBBBBB</color>
+                <lineSpacing>1.1</lineSpacing>
+                <verticalAlignment>top</verticalAlignment>
                 <zIndex>46</zIndex>
             </text>
 
@@ -263,37 +267,36 @@
              </text>-->
 
              <video name="gamelistbackgroundvideo">
-                <pos>0.053 0.675</pos>
+                <pos>0.1925 0.565</pos>
                 <size>0 0.3</size>
-                <origin>0 0.5</origin>
+                <origin>0.5 0.5</origin>
                 <zIndex>46</zIndex>
             </video>
 
-            <carousel name="gamelistCarousel">
-                <pos>0 0</pos>
-                <size>1.45 1</size>
-                <type>verticalWheel</type>
+             <carousel name="gamelistCarousel">
+                <pos>0 0.70</pos>
+                <size>1 0.4</size>
+                <type>horizontal</type>
+                <horizontalOffset>-.31</horizontalOffset>
+                <verticalOffset>-.01</verticalOffset>
                 <imageType>marquee</imageType>
-                <itemsBeforeCenter>5</itemsBeforeCenter>
-                <itemsAfterCenter>5</itemsAfterCenter>
-                <itemSize>0.15 0.125</itemSize>
-                <itemScale>1.5</itemScale>
-                <itemRotation>-7</itemRotation>
+                <maxItemCount>6</maxItemCount>
+                <itemSize>0.2 0.15</itemSize>
+                <itemScale>1.35</itemScale>
                 <imageInterpolation>linear</imageInterpolation>
-                <itemRotationOrigin>4.03 0.5</itemRotationOrigin>
-                <itemAxisHorizontal>true</itemAxisHorizontal>
-                <itemHorizontalAlignment>center</itemHorizontalAlignment>
-                <itemVerticalAlignment>center</itemVerticalAlignment>
-                <wheelHorizontalAlignment>left</wheelHorizontalAlignment>
-                <horizontalOffset>0.50</horizontalOffset>
-                <fastScrolling>true</fastScrolling>
                 <color>00000000</color>
                 <textColor>BBBBBB</textColor>
-                <fontSize>0.046</fontSize>
+                <fontSize>0.055</fontSize>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
-                <unfocusedItemOpacity>1</unfocusedItemOpacity>
-                <zIndex>50</zIndex>
+                <selectedItemMargins>.02 .02</selectedItemMargins>
+                <!--<imageBrightness>.25</imageBrightness>-->
+                <reflections>true</reflections>
+                <reflectionsOpacity>.25</reflectionsOpacity>
+                <reflectionsFalloff>1.25</reflectionsFalloff>
+                <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
+                <unfocusedItemDimming>.5</unfocusedItemDimming>
+                <fastScrolling>true</fastScrolling>
             </carousel>
         
 
@@ -307,16 +310,6 @@
                 <color>BBBBBB</color>
                 <zIndex>65</zIndex>
             </gamelistinfo>
-
-            <image name="systemlogo">
-                <pos>.015 .94</pos>
-                <origin>0 .5</origin>
-                <maxSize>.16 .1</maxSize>
-                <path>${rootpath}/${system.theme}/images/logo.svg</path>
-                <default>${rootpath}/${system.theme}/images/logo.png</default>
-                <interpolation>linear</interpolation>
-                <zIndex>56</zIndex>
-             </image>
         </view>
         
         
@@ -333,6 +326,9 @@
         
         <view name="system, gamelist">
             <helpsystem name="help">
+                <!--
+                    <pos>0.012 0.957</pos>
+                -->
                 <pos>0.5 0.96</pos>
                 <origin>0.5 0</origin>
                 <textColor>FFFFFF</textColor>
