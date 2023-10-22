@@ -30,14 +30,26 @@
         <transitions>fadeAndSlide</transitions>
     </variant>
 
-    <variant name="TopCarousel">
-        <label>Top Carousel</label>
+    <variant name="DefaultImmersive">
+        <label>Default Immersive</label>
         <selectable>true</selectable>
         <transitions>fadeAndSlide</transitions>
     </variant>
 
-    <variant name="Immersive">
-        <label>Immersive</label>
+    <variant name="CoversCarousel">
+        <label>Covers Carousel</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+
+    <variant name="CoversCarouselImmersive">
+        <label>Covers Carousel Immersive</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+
+    <variant name="OldDefault">
+        <label>Old Default</label>
         <selectable>true</selectable>
         <transitions>fadeAndSlide</transitions>
     </variant>

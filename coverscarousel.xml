@@ -1,5 +1,5 @@
 <!--
-    Variant - Default
+    Variant - Immersive
 -->
 
 <theme> 
@@ -16,7 +16,6 @@
         </variables>
     
         <view name="system">
-            
             <image name="systembackgroundoverlay">
                 <pos>0 0</pos>
                 <size>1 1</size>
@@ -61,8 +60,9 @@
                 <fastScrolling>true</fastScrolling>
             </carousel>
 
+
             <text name="gameCount">
-                <pos>0.053 0.26</pos>
+                <pos>0.053 0.31</pos>
                 <size>0.4 0</size>
                 <!--<pos>0.75 0.86</pos>
                 <size>0.2 0.2</size>-->
@@ -75,7 +75,7 @@
              </text>
             <text name="system-year">
                 <text>${systemReleaseYear}</text>
-                <pos>0.053 0.26</pos>
+                <pos>0.053 0.31</pos>
                 <size>0.4 0</size>
                 <fontSize>0.024</fontSize>
                 <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -86,7 +86,7 @@
             </text>
             <text name="system-description">
                 <text>${systemDescription}</text>
-                <pos>0.053 0.29</pos>
+                <pos>0.053 0.34</pos>
                 <size>0.4 0.18</size>
                 <fontSize>0.024</fontSize>
                 <lineSpacing>1.1</lineSpacing>
@@ -97,20 +97,20 @@
             <gameselector name="randomselection">
             </gameselector>
             <video name="systembackgroundvideo">
-                <pos>0.2525 0.7</pos>
-                <size>0 0.4</size>
-                <origin>0.5 0.5</origin>
+                <pos>0.053 0.675</pos>
+                <size>0 0.3</size>
+                <origin>0 0.5</origin>
                 <zIndex>12</zIndex>
             </video>
-           
+
+            
         </view>
         
         <aspectRatio name="16:10">
             <view name="system">
-                <image name="backgroundpromo">
-                    <pos>-.03 0</pos>
-                    <size>0 1</size>
-                </image>
+                <video name="systembackgroundvideo">
+                    <size>1.11 0</size>
+                </video>
             </view>
         </aspectRatio>
     
@@ -118,46 +118,51 @@
             <image name="gamelistbackgroundoverlay">
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>${rootpath}/core/images/artflix.png</path>
+                <path>${rootpath}/core/images/artflixgamelistoverlay.png</path>
                 <color>959595FF</color>
-                <zIndex>11</zIndex>
+                <zIndex>45</zIndex>
             </image>
             
-            <image name="gamelistfanart">
-                <pos>0 0</pos>
-                <size>1 1</size>
-                <imageType>fanart</imageType>
-                <interpolation>linear</interpolation>
+            <video name="gamevideo">
+                <pos>1 0</pos>
+                <!-- old cropsize-->
+                <cropSize>.6 .75</cropSize>
+                <!-- newer, smaller cropsize> -->
+                <!-- <cropSize>.48 .63</cropSize> -->
+                <!-- size here is nice for 4:3 vids but fanart doens't look good, too short -->
+                <!-- <size>.6 0</size> -->
+                <!-- size here issue is vertical arcade games are far right of screen -->
+                <!--<size>0 .65</size>-->
+                <origin>1 0</origin>
+                <imageType>fanart, screenshot, titlescreen, cover</imageType>
+                <pillarboxes>false</pillarboxes>
+                <delay>1</delay>
                 <scrollFadeIn>true</scrollFadeIn>
-                <zIndex>9</zIndex>
-            </image>
-
-            <carousel name="gamelistCarousel">
-                <pos>0 0</pos>
-                <size>1 0.25</size>
-                <type>horizontal</type>
-                <horizontalOffset>-.26</horizontalOffset>
-                <verticalOffset>-.05</verticalOffset>
+                <zIndex>30</zIndex>
+            </video>
+            
+            <image name="game-logo">
+                <pos>0.023 0.255</pos>
+                <origin>0 1</origin>
+                <maxSize>0.3 0.2</maxSize>
                 <imageType>marquee</imageType>
-                <maxItemCount>4</maxItemCount>
-                <itemSize>0.25 0.15</itemSize>
-                <itemScale>1.5</itemScale>
-                <imageInterpolation>linear</imageInterpolation>
-                <itemVerticalAlignment>bottom</itemVerticalAlignment>
-                <color>00000000</color>
-                <textColor>BBBBBB</textColor>
-                <fontSize>0.055</fontSize>
-                <letterCase>uppercase</letterCase>
-                <lineSpacing>1.2</lineSpacing>
-                <selectedItemMargins>.02 .02</selectedItemMargins>
-                <!--<imageBrightness>.25</imageBrightness>-->   
-                <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
-                <unfocusedItemDimming>.5</unfocusedItemDimming>
-                <fastScrolling>true</fastScrolling>
-            </carousel>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>46</zIndex>
+            </image>
+            <text name="descriptiontext">
+                <pos>0.023 0.29</pos>
+                <size>0.385 0.18</size>
+                <metadata>description</metadata>
+                <container>true</container>
+                <fontSize>0.024</fontSize>
+                <color>BBBBBB</color>
+                <lineSpacing>1.1</lineSpacing>
+                <verticalAlignment>top</verticalAlignment>
+                <zIndex>46</zIndex>
+            </text>
 
             <rating name="ratinggraphic">
-                <pos>.053 .262</pos>
+                <pos>.023 .272</pos>
                 <origin>0 0.5</origin>
                 <size>0 0.03</size>
                 <filledPath>${rootpath}/core/images/star_filled.svg</filledPath>
@@ -165,28 +170,8 @@
                 <color>FFFFFF</color>
                 <zIndex>65</zIndex>
             </rating>
-            <image name="players-icon">
-                <pos>.1465 .263</pos>
-                <origin>0 .5</origin>
-                <maxSize>.028 .03</maxSize>
-                <path>${rootpath}/core/images/icon-players.svg</path>
-                <color>FFFFFF</color>
-                <metadataElement>true</metadataElement>
-                <zIndex>65</zIndex>
-            </image>
-            <text name="players">
-                <pos>.1665 .263</pos>
-                <origin>0 .5</origin>
-                <size>.02 .018</size>
-                <fontSize>.03</fontSize>
-                <metadata>players</metadata>
-                <defaultValue>Unknown</defaultValue>
-                <color>FFFFFF</color>
-                <lineSpacing>1</lineSpacing>
-                <zIndex>65</zIndex>
-            </text>
             <badges name="badges">
-                <pos>0.20 0.263</pos>
+                <pos>0.17 0.273</pos>
                 <origin>0 0.5</origin>
                 <size>.1 .028</size>
                 <horizontalAlignment>left</horizontalAlignment>
@@ -198,18 +183,26 @@
                 <zIndex>65</zIndex>
             </badges>
 
-            <text name="descriptiontext">
-                <pos>0.053 0.29 </pos>
-                <size>0.4 0.18</size>
-                <metadata>description</metadata>
-                <container>true</container>
-                <fontSize>0.024</fontSize>
-                <color>BBBBBB</color>
-                <lineSpacing>1.1</lineSpacing>
-                <verticalAlignment>top</verticalAlignment>
-                <zIndex>46</zIndex>
+            <image name="players-icon">
+                <pos>.1165 .273</pos>
+                <origin>0 .5</origin>
+                <maxSize>.028 .03</maxSize>
+                <path>${rootpath}/core/images/icon-players.svg</path>
+                <color>FFFFFF</color>
+                <metadataElement>true</metadataElement>
+                <zIndex>65</zIndex>
+            </image>
+            <text name="players">
+                <pos>.1365 .273</pos>
+                <origin>0 .5</origin>
+                <size>.02 .018</size>
+                <fontSize>.03</fontSize>
+                <metadata>players</metadata>
+                <defaultValue>Unknown</defaultValue>
+                <color>FFFFFF</color>
+                <lineSpacing>1</lineSpacing>
+                <zIndex>65</zIndex>
             </text>
-
             <!--<image name="developer-icon">
                 <pos>.1765 .273</pos>
                 <origin>0 .5</origin>
@@ -251,12 +244,35 @@
                 <zIndex>65</zIndex>
              </text>-->
 
-             <video name="gamelistbackgroundvideo">
-                <pos>0.2525 0.7</pos>
-                <size>0 0.4</size>
-                <origin>0.5 0.5</origin>
-                <zIndex>46</zIndex>
-            </video>    
+
+            <carousel name="gamelistCarousel">
+                <pos>.5 1</pos>
+                <origin>.5 1</origin>
+                <size>1 .45</size>
+                <type>horizontal</type>
+                <imageType>cover</imageType>
+                <maxItemCount>8</maxItemCount>
+                <itemSize>0.125 0.25</itemSize>
+                <itemScale>1.5</itemScale>
+                <imageInterpolation>linear</imageInterpolation>
+                <itemAxisHorizontal>true</itemAxisHorizontal>
+                <itemHorizontalAlignment>center</itemHorizontalAlignment>
+                <itemVerticalAlignment>center</itemVerticalAlignment>
+                <fastScrolling>true</fastScrolling>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.046</fontSize>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1.2</lineSpacing>
+                <horizontalOffset>-.375</horizontalOffset>
+                <verticalOffset>.25</verticalOffset>
+                <reflections>true</reflections>
+                <reflectionsOpacity>.25</reflectionsOpacity>
+                <reflectionsFalloff>2</reflectionsFalloff>
+                <unfocusedItemOpacity>1</unfocusedItemOpacity>
+                <zIndex>50</zIndex>
+            </carousel>
+        
 
             <gamelistinfo name="gamelistInfo">
                 <pos>0.9 0.95</pos>

@@ -1,0 +1,43 @@
+<!--
+    Variant - Default
+-->
+
+<theme> 
+   
+    <include>./default.xml</include>
+
+    <view name="system">
+        <video name="systembackgroundvideo">
+            <pos>.5 .5</pos>
+            <size>1 0</size>
+            <origin>.5 .5</origin>
+            <imageType>fanart, screenshot, titlescreen, cover</imageType>
+            <pillarboxes>false</pillarboxes>
+            <delay>1</delay>
+            <scrollFadeIn>true</scrollFadeIn>
+            <zIndex>10</zIndex>
+        </video>
+    </view>
+
+    <aspectRatio name="16:10">
+        <view name="system">
+            <video name="systembackgroundvideo">
+                <size>1.11 0</size>
+            </video>
+        </view>
+    </aspectRatio>
+
+    <view name="gamelist">
+        <video name="gamelistbackgroundvideo">
+            <pos>.5 .5</pos>
+            <size>1 0</size>
+            <origin>.5 .5</origin>
+            <imageType>fanart, screenshot, titlescreen, cover</imageType>
+            <pillarboxes>false</pillarboxes>
+            <delay>1</delay>
+            <scrollFadeIn>true</scrollFadeIn>
+            <zIndex>10</zIndex>
+        </video>
+    </view>
+
+</theme>

@@ -8,11 +8,19 @@
         <include>./default.xml</include>
     </variant>
 
-    <variant name="TopCarousel">
-        <include>./topcarousel.xml</include>
+    <variant name="DefaultImmersive">
+        <include>./defaultimmersive.xml</include>
     </variant>
 
-    <variant name="Immersive">
-        <include>./immersive.xml</include>
+    <variant name="CoversCarousel">
+        <include>./coverscarousel.xml</include>
+    </variant>
+
+    <variant name="CoversCarouselImmersive">
+        <include>./coverscarouselimmersive.xml</include>
+    </variant>
+
+    <variant name="OldDefault">
+        <include>./default_old.xml</include>
     </variant>
 </theme>
