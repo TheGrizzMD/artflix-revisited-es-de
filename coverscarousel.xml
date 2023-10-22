@@ -106,13 +106,7 @@
             
         </view>
         
-        <aspectRatio name="16:10">
-            <view name="system">
-                <video name="systembackgroundvideo">
-                    <size>1.11 0</size>
-                </video>
-            </view>
-        </aspectRatio>
+
     
         <view name="gamelist">
             <image name="gamelistbackgroundoverlay">
