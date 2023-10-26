@@ -6,20 +6,19 @@
 
     <include>./navigationsounds.xml</include>
     
-        <include>${rootpath}/core/metadata-global/_default.xml</include>
-        <include>${rootpath}/core/metadata-global/${system.theme}.xml</include>
+        <include>${rootpath}/_inc/systems/metadata-global/_default.xml</include>
+        <include>${rootpath}/_inc/systems/metadata-global/${system.theme}.xml</include>
     
         <variables>
             <rootpath>./</rootpath>
-            <systemPromoImage>${rootpath}/${system.theme}/images/promo.jpg</systemPromoImage>
-            <systemLogo>${rootpath}/${system.theme}/images/logo.png</systemLogo>
+            <systemPromoImage>${rootpath}/_inc/systems/fanart/${system.theme}.jpg</systemPromoImage>
         </variables>
     
         <view name="system">
             <image name="systembackgroundoverlay">
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>${rootpath}/core/images/defaultsystemgrad.png</path>
+                <path>${rootpath}/_inc/images/defaultsystemgrad.png</path>
                 <color>959595FF</color>
                 <zIndex>11</zIndex>
             </image>
@@ -38,7 +37,7 @@
                 <pos>0.053 0.16</pos>
                 <size>0.4 0.2</size>
                 <fontSize>0.065</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
+                <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
                 <lineSpacing>1.1</lineSpacing>
                 <color>FFFFFF</color>
                 <verticalAlignment>bottom</verticalAlignment>
@@ -54,7 +53,7 @@
                 <size>0.2 0.2</size>-->
                 <systemdata>gamecount</systemdata>
                 <fontSize>0.024</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
+                <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
                 <lineSpacing>1.1</lineSpacing>
                 <horizontalAlignment>left</horizontalAlignment>
                 <color>FFFFFF</color>
@@ -64,7 +63,7 @@
                 <pos>0.053 0.31</pos>
                 <size>0.4 0</size>
                 <fontSize>0.024</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
+                <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
                 <lineSpacing>1.1</lineSpacing>
                 <color>FFFFFF</color>
                 <verticalAlignment>center</verticalAlignment>
@@ -96,8 +95,8 @@
                 <size>0.3 1</size>
                 <origin>1 .5</origin>
                 <type>vertical</type>
-                <staticImage>${rootpath}/${system.theme}/images/logo.png</staticImage>
-                <defaultImage>${rootpath}/${system.theme}/images/logo.svg</defaultImage>
+                <staticImage>${rootpath}/_inc/systems/logos/${system.theme}.svg</staticImage>
+                <defaultImage>${rootpath}/_inc/systems/logos/${system.theme}.png</defaultImage>
                 <maxItemCount>6</maxItemCount>
                 <itemSize>0.2 0.125</itemSize>
                 <itemScale>1.35</itemScale>
@@ -109,7 +108,6 @@
                 <lineSpacing>1.2</lineSpacing>
                 <selectedItemMargins>.02 .02</selectedItemMargins>
                 <!--<imageBrightness>.25</imageBrightness>-->
-                <reflections>true</reflections>
                 <reflectionsOpacity>.25</reflectionsOpacity>
                 <reflectionsFalloff>1.25</reflectionsFalloff>
                 <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
@@ -132,14 +130,14 @@
             <image name="gamelistbackgroundoverlay">
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>${rootpath}/core/images/defaultsystemgrad.png</path>
+                <path>${rootpath}/_inc/images/defaultsystemgrad.png</path>
                 <color>959595FF</color>
                 <zIndex>11</zIndex>
             </image>
             <image name="gamelistforegroundoverlay">
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>${rootpath}/core/images/overlay.png</path>
+                <path>${rootpath}/_inc/images/overlay.png</path>
                 <zIndex>55</zIndex>
             </image>
             
@@ -157,7 +155,7 @@
                 <pos>0.053 0.16</pos>
                 <size>0.4 0.2</size>
                 <fontSize>0.065</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
+                <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
                 <lineSpacing>1.1</lineSpacing>
                 <color>FFFFFF</color>
                 <verticalAlignment>bottom</verticalAlignment>
@@ -171,8 +169,8 @@
                 <pos>.053 .322</pos>
                 <origin>0 0.5</origin>
                 <size>0 0.03</size>
-                <filledPath>${rootpath}/core/images/star_filled.svg</filledPath>
-                <unfilledPath>${rootpath}/core/images/star_unfilled.svg</unfilledPath>
+                <filledPath>${rootpath}/_inc/images/star_filled.svg</filledPath>
+                <unfilledPath>${rootpath}/_inc/images/star_unfilled.svg</unfilledPath>
                 <color>FFFFFF</color>
                 <zIndex>65</zIndex>
             </rating>
@@ -180,7 +178,7 @@
                 <pos>.1465 .323</pos>
                 <origin>0 .5</origin>
                 <maxSize>.028 .03</maxSize>
-                <path>${rootpath}/core/images/icon-players.svg</path>
+                <path>${rootpath}/_inc/images/icon-players.svg</path>
                 <color>FFFFFF</color>
                 <metadataElement>true</metadataElement>
                 <zIndex>65</zIndex>
@@ -205,7 +203,7 @@
                 <lines>4</lines>
                 <itemsPerLine>1</itemsPerLine>
                 <slots>favorite</slots>
-                <customBadgeIcon badge="favorite">${rootpath}/core/images/yes.png</customBadgeIcon>
+                <customBadgeIcon badge="favorite">${rootpath}/_inc/images/yes.png</customBadgeIcon>
                 <zIndex>65</zIndex>
             </badges>
 
@@ -225,7 +223,7 @@
                 <pos>.1765 .273</pos>
                 <origin>0 .5</origin>
                 <maxSize>.027 .027</maxSize>
-                <path>${rootpath}/core/images/icon-developer.svg</path>
+                <path>${rootpath}/_inc/images/icon-developer.svg</path>
                 <color>FFFFFF</color>
                 <metadataElement>true</metadataElement>
                 <zIndex>65</zIndex>
@@ -245,7 +243,7 @@
                 <pos>.0265 .5605</pos>
                 <origin>0 .5</origin>
                 <maxSize>.027 .027</maxSize>
-                <path>${rootpath}/core/images/icon-publisher.svg</path>
+                <path>${rootpath}/_inc/images/icon-publisher.svg</path>
                 <color>FFFFFF</color>
                 <metadataElement>true</metadataElement>
                 <zIndex>65</zIndex>
@@ -301,7 +299,7 @@
                 <pos>0.9 0.95</pos>
                 <size>w 0.02</size>
                 <fontSize>0.025</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-RegularCondensed.otf</fontPath>
+                <fontPath>${rootpath}/_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
                 <horizontalAlignment>right</horizontalAlignment>
                 <verticalAlignment>bottom</verticalAlignment>
                 <color>BBBBBB</color>
@@ -312,8 +310,8 @@
                 <pos>.015 .94</pos>
                 <origin>0 .5</origin>
                 <maxSize>.16 .1</maxSize>
-                <path>${rootpath}/${system.theme}/images/logo.svg</path>
-                <default>${rootpath}/${system.theme}/images/logo.png</default>
+                <path>${rootpath}/_inc/systems/logos/${system.theme}.svg</path>
+                <default>${rootpath}/_inc/systems/logos/${system.theme}.png</default>
                 <interpolation>linear</interpolation>
                 <zIndex>56</zIndex>
              </image>
@@ -338,7 +336,7 @@
                 <textColor>FFFFFF</textColor>
                 <iconColor>FFFFFF</iconColor>
                 <fontSize>0.025</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-RegularCondensed.otf</fontPath>
+                <fontPath>${rootpath}/_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
                 <iconTextSpacing>0.003</iconTextSpacing>
                 <originDimmed>0.5 0</originDimmed>
                 <posDimmed>0.5 0.96</posDimmed>

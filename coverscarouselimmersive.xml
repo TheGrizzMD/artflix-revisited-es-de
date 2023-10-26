@@ -29,7 +29,7 @@
 
     <view name="gamelist">
         <image name="gamelistbackgroundoverlay">
-            <path>${rootpath}/core/images/topcarouseloverlay.png</path>
+            <path>${rootpath}/_inc/images/topcarouseloverlay.png</path>
         </image>
 
         <video name="gamevideo">

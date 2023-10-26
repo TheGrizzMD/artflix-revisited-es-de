@@ -6,20 +6,19 @@
 
     <include>./navigationsounds.xml</include>
     
-        <include>${rootpath}/core/metadata-global/_default.xml</include>
-        <include>${rootpath}/core/metadata-global/${system.theme}.xml</include>
+        <include>${rootpath}/_inc/systems/metadata-global/_default.xml</include>
+        <include>${rootpath}/_inc/systems/metadata-global/${system.theme}.xml</include>
     
         <variables>
             <rootpath>./</rootpath>
-            <systemPromoImage>${rootpath}/${system.theme}/images/promo.jpg</systemPromoImage>
-            <systemLogo>${rootpath}/${system.theme}/images/logo.png</systemLogo>
+            <systemPromoImage>${rootpath}/_inc/systems/fanart/${system.theme}.jpg</systemPromoImage>
         </variables>
     
         <view name="system">
             <image name="systembackgroundoverlay">
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>${rootpath}/core/images/artflix.png</path>
+                <path>${rootpath}/_inc/images/artflix.png</path>
                 <color>959595FF</color>
                 <zIndex>11</zIndex>
             </image>
@@ -38,7 +37,7 @@
                 <pos>0.053 0.06</pos>
                 <size>0.4 0.2</size>
                 <fontSize>0.065</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
+                <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
                 <lineSpacing>1.1</lineSpacing>
                 <color>FFFFFF</color>
                 <verticalAlignment>bottom</verticalAlignment>
@@ -54,7 +53,7 @@
                 <size>0.2 0.2</size>-->
                 <systemdata>gamecount</systemdata>
                 <fontSize>0.024</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
+                <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
                 <lineSpacing>1.1</lineSpacing>
                 <horizontalAlignment>left</horizontalAlignment>
                 <color>FFFFFF</color>
@@ -64,7 +63,7 @@
                 <pos>0.053 0.21</pos>
                 <size>0.4 0</size>
                 <fontSize>0.024</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
+                <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
                 <lineSpacing>1.1</lineSpacing>
                 <color>FFFFFF</color>
                 <verticalAlignment>center</verticalAlignment>
@@ -106,8 +105,8 @@
                 <type>horizontal</type>
                 <horizontalOffset>-.31</horizontalOffset>
                 <verticalOffset>-.05</verticalOffset>
-                <staticImage>${rootpath}/${system.theme}/images/logo.png</staticImage>
-                <defaultImage>${rootpath}/${system.theme}/images/logo.svg</defaultImage>
+                <staticImage>${rootpath}/_inc/systems/logos/${system.theme}.svg</staticImage>
+                <defaultImage>${rootpath}/_inc/systems/logos/${system.theme}.png</defaultImage>
                 <maxItemCount>3</maxItemCount>
                 <itemSize>0.2 0.125</itemSize>
                 <itemScale>1.35</itemScale>
@@ -142,7 +141,7 @@
             <image name="gamelistbackgroundoverlay">
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>${rootpath}/core/images/artflix.png</path>
+                <path>${rootpath}/_inc/images/artflix.png</path>
                 <color>959595FF</color>
                 <zIndex>11</zIndex>
             </image>
@@ -161,7 +160,7 @@
                 <pos>0.053 0.06</pos>
                 <size>0.4 0.2</size>
                 <fontSize>0.065</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-BoldCondensed.otf</fontPath>
+                <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
                 <lineSpacing>1.1</lineSpacing>
                 <color>FFFFFF</color>
                 <verticalAlignment>bottom</verticalAlignment>
@@ -175,8 +174,8 @@
                 <pos>.053 .222</pos>
                 <origin>0 0.5</origin>
                 <size>0 0.03</size>
-                <filledPath>${rootpath}/core/images/star_filled.svg</filledPath>
-                <unfilledPath>${rootpath}/core/images/star_unfilled.svg</unfilledPath>
+                <filledPath>${rootpath}/_inc/images/star_filled.svg</filledPath>
+                <unfilledPath>${rootpath}/_inc/images/star_unfilled.svg</unfilledPath>
                 <color>FFFFFF</color>
                 <zIndex>65</zIndex>
             </rating>
@@ -184,7 +183,7 @@
                 <pos>.1465 .223</pos>
                 <origin>0 .5</origin>
                 <maxSize>.028 .03</maxSize>
-                <path>${rootpath}/core/images/icon-players.svg</path>
+                <path>${rootpath}//images/icon-players.svg</path>
                 <color>FFFFFF</color>
                 <metadataElement>true</metadataElement>
                 <zIndex>65</zIndex>
@@ -209,7 +208,7 @@
                 <lines>4</lines>
                 <itemsPerLine>1</itemsPerLine>
                 <slots>favorite</slots>
-                <customBadgeIcon badge="favorite">${rootpath}/core/images/yes.png</customBadgeIcon>
+                <customBadgeIcon badge="favorite">${rootpath}/_inc/images/yes.png</customBadgeIcon>
                 <zIndex>65</zIndex>
             </badges>
 
@@ -229,7 +228,7 @@
                 <pos>.1765 .273</pos>
                 <origin>0 .5</origin>
                 <maxSize>.027 .027</maxSize>
-                <path>${rootpath}/core/images/icon-developer.svg</path>
+                <path>${rootpath}/_inc/images/icon-developer.svg</path>
                 <color>FFFFFF</color>
                 <metadataElement>true</metadataElement>
                 <zIndex>65</zIndex>
@@ -249,7 +248,7 @@
                 <pos>.0265 .5605</pos>
                 <origin>0 .5</origin>
                 <maxSize>.027 .027</maxSize>
-                <path>${rootpath}/core/images/icon-publisher.svg</path>
+                <path>${rootpath}/_inc/images/icon-publisher.svg</path>
                 <color>FFFFFF</color>
                 <metadataElement>true</metadataElement>
                 <zIndex>65</zIndex>
@@ -304,7 +303,7 @@
                 <pos>0.9 0.95</pos>
                 <size>w 0.02</size>
                 <fontSize>0.025</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-RegularCondensed.otf</fontPath>
+                <fontPath>${rootpath}/_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
                 <horizontalAlignment>right</horizontalAlignment>
                 <verticalAlignment>bottom</verticalAlignment>
                 <color>BBBBBB</color>
@@ -334,7 +333,7 @@
                 <textColor>FFFFFF</textColor>
                 <iconColor>FFFFFF</iconColor>
                 <fontSize>0.025</fontSize>
-                <fontPath>${rootpath}/core/fonts/Exo2-RegularCondensed.otf</fontPath>
+                <fontPath>${rootpath}/_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
                 <iconTextSpacing>0.003</iconTextSpacing>
                 <originDimmed>0.5 0</originDimmed>
                 <posDimmed>0.5 0.96</posDimmed>
