@@ -127,6 +127,7 @@
                 <!-- size here issue is vertical arcade games are far right of screen -->
                 <!--<size>0 .65</size>-->
                 <origin>1 0</origin>
+                <defaultImage>${rootpath}/_inc/images/defaultcover.png</defaultImage>
                 <imageType>fanart, screenshot, titlescreen, cover</imageType>
                 <pillarboxes>false</pillarboxes>
                 <delay>1</delay>
@@ -191,7 +192,7 @@
                 <size>.02 .018</size>
                 <fontSize>.03</fontSize>
                 <metadata>players</metadata>
-                <defaultValue>Unknown</defaultValue>
+                <defaultValue>?</defaultValue>
                 <color>FFFFFF</color>
                 <lineSpacing>1</lineSpacing>
                 <zIndex>65</zIndex>
