@@ -209,7 +209,7 @@
                 <lines>4</lines>
                 <itemsPerLine>1</itemsPerLine>
                 <slots>favorite</slots>
-                <customBadgeIcon badge="favorite">${rootpath}/_inc/images/yes.png</customBadgeIcon>
+                <customBadgeIcon badge="favorite">${rootpath}/_inc/images/badge-favorite.svg</customBadgeIcon>
                 <zIndex>65</zIndex>
             </badges>
 
