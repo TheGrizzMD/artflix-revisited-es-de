@@ -70,9 +70,9 @@
                 <horizontalAlignment>right</horizontalAlignment>
             </text>
             <text name="system-description">
-                <text>${systemDescription}</text>
                 <pos>0.053 0.34</pos>
                 <size>0.4 0.18</size>
+                <text>${systemDescription}</text>
                 <fontSize>0.024</fontSize>
                 <lineSpacing>1.1</lineSpacing>
                 <color>BBBBBB</color>
@@ -187,7 +187,7 @@
             <text name="players">
                 <pos>.1665 .323</pos>
                 <origin>0 .5</origin>
-                <size>.02 .018</size>
+                <size>.02 .03</size>
                 <fontSize>.03</fontSize>
                 <metadata>players</metadata>
                 <defaultValue>?</defaultValue>
@@ -198,11 +198,11 @@
             <badges name="badges">
                 <pos>0.195 0.323</pos>
                 <origin>0 0.5</origin>
-                <size>.15 .028</size>
+                <size>.25 .03</size>
                 <horizontalAlignment>left</horizontalAlignment>
                 <direction>row</direction>
                 <lines>1</lines>
-                <itemMargin>-1 .005</itemMargin>
+                <itemMargin>-1 .01</itemMargin>
                 <slots>collection, folder, favorite, completed, kidgame, broken, controller, altemulator, manual</slots>
                 <customBadgeIcon badge="collection">${rootpath}/_inc/images/badge-collection.svg</customBadgeIcon>
                 <customBadgeIcon badge="folder">${rootpath}/_inc/images/badge-folder.svg</customBadgeIcon>
@@ -213,6 +213,8 @@
                 <customBadgeIcon badge="controller">${rootpath}/_inc/images/badge-controller.svg</customBadgeIcon>
                 <customBadgeIcon badge="altemulator">${rootpath}/_inc/images/badge-altemulator.svg</customBadgeIcon>
                 <customBadgeIcon badge="manual">${rootpath}/_inc/images/badge-manual.svg</customBadgeIcon>
+                <controllerIconColor>FFFFFF</controllerIconColor>
+                <controllerSize>1</controllerSize>
                 <zIndex>65</zIndex>
             </badges>
 
@@ -273,6 +275,8 @@
                 <pos>0.053 0.675</pos>
                 <size>0 0.3</size>
                 <origin>0 0.5</origin>
+                <imageType>cover</imageType>
+                <delay>2</delay>
                 <zIndex>46</zIndex>
             </video>
 

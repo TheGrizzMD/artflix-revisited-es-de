@@ -279,18 +279,7 @@
                 <zIndex>65</zIndex>
             </gamelistinfo>
         </view>
-        
-        
-        <aspectRatio name="16:10">
-            <view name="gamelist">
-                <image name="coverfanartfallback">
-                    <pos>1 .5</pos>
-                    <origin>.878 .5</origin>
-                    <maxSize>1.5 1</maxSize>
-                </image>
-            </view>
-        </aspectRatio>
-    
+           
         
         <view name="system, gamelist">
             <helpsystem name="help">
