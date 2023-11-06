@@ -32,7 +32,7 @@
             </image>
 
             <carousel name="systemCarousel">
-                <pos>0 0.08</pos>
+                <pos>0 0</pos>
                 <size>1 0.25</size>
                 <type>horizontal</type>
                 <horizontalOffset>-.26</horizontalOffset>
@@ -50,6 +50,10 @@
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
                 <selectedItemMargins>.02 .02</selectedItemMargins>
+                <!--<imageBrightness>.25</imageBrightness>-->
+                <!--<reflections>true</reflections>
+                <reflectionsOpacity>.25</reflectionsOpacity>
+                <reflectionsFalloff>1.25</reflectionsFalloff>-->
                 <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
                 <unfocusedItemDimming>.5</unfocusedItemDimming>
                 <fastScrolling>true</fastScrolling>
@@ -57,8 +61,10 @@
 
 
             <text name="gameCount">
-                <pos>0.053 0.36</pos>
+                <pos>0.053 0.31</pos>
                 <size>0.4 0</size>
+                <!--<pos>0.75 0.86</pos>
+                <size>0.2 0.2</size>-->
                 <systemdata>gamecount</systemdata>
                 <fontSize>0.024</fontSize>
                 <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -68,7 +74,7 @@
              </text>
             <text name="system-year">
                 <text>${systemReleaseYear}</text>
-                <pos>0.053 0.36</pos>
+                <pos>0.053 0.31</pos>
                 <size>0.4 0</size>
                 <fontSize>0.024</fontSize>
                 <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -78,9 +84,9 @@
                 <horizontalAlignment>right</horizontalAlignment>
             </text>
             <text name="system-description">
-                <pos>0.053 0.395</pos>
-                <size>0.4 0.18</size>
                 <text>${systemDescription}</text>
+                <pos>0.053 0.34</pos>
+                <size>0.4 0.18</size>
                 <fontSize>0.024</fontSize>
                 <lineSpacing>1.1</lineSpacing>
                 <color>BBBBBB</color>
@@ -90,24 +96,17 @@
             <gameselector name="randomselection">
             </gameselector>
             <video name="systembackgroundvideo">
-                <pos>0.053 0.725</pos>
+                <pos>0.053 0.675</pos>
                 <size>0 0.3</size>
                 <origin>0 0.5</origin>
                 <zIndex>12</zIndex>
             </video>
 
+            
         </view>
         
-        <aspectRatio name="16:10">
-            <view name="system">
-                <image name="backgroundpromo">
-                    <pos>-.03 0</pos>
-                    <size>0 1</size>
-                </image>
-            </view>
-        </aspectRatio>
-    
 
+    
         <view name="gamelist">
             <image name="gamelistbackgroundoverlay">
                 <pos>0 0</pos>
@@ -119,28 +118,45 @@
             
             <video name="gamevideo">
                 <pos>1 0</pos>
+                <!-- old cropsize-->
                 <cropSize>.6 .75</cropSize>
+                <!-- newer, smaller cropsize> -->
+                <!-- <cropSize>.48 .63</cropSize> -->
+                <!-- size here is nice for 4:3 vids but fanart doens't look good, too short -->
+                <!-- <size>.6 0</size> -->
+                <!-- size here issue is vertical arcade games are far right of screen -->
+                <!--<size>0 .65</size>-->
                 <origin>1 0</origin>
                 <defaultImage>${rootpath}/_inc/images/defaultcover.png</defaultImage>
                 <imageType>fanart, screenshot, titlescreen, cover</imageType>
                 <pillarboxes>false</pillarboxes>
-                <delay>2</delay>
+                <delay>1</delay>
                 <scrollFadeIn>true</scrollFadeIn>
                 <zIndex>30</zIndex>
             </video>
             
             <image name="game-logo">
-                <pos>0.023 0.305</pos>
+                <pos>0.023 0.255</pos>
                 <origin>0 1</origin>
                 <maxSize>0.3 0.2</maxSize>
                 <imageType>marquee</imageType>
                 <scrollFadeIn>true</scrollFadeIn>
                 <zIndex>46</zIndex>
             </image>
-
+            <text name="descriptiontext">
+                <pos>0.023 0.29</pos>
+                <size>0.385 0.18</size>
+                <metadata>description</metadata>
+                <container>true</container>
+                <fontSize>0.024</fontSize>
+                <color>BBBBBB</color>
+                <lineSpacing>1.1</lineSpacing>
+                <verticalAlignment>top</verticalAlignment>
+                <zIndex>46</zIndex>
+            </text>
 
             <rating name="ratinggraphic">
-                <pos>.023 .322</pos>
+                <pos>.023 .272</pos>
                 <origin>0 0.5</origin>
                 <size>0 0.03</size>
                 <filledPath>${rootpath}/_inc/images/star_filled.svg</filledPath>
@@ -148,8 +164,21 @@
                 <color>FFFFFF</color>
                 <zIndex>65</zIndex>
             </rating>
+            <badges name="badges">
+                <pos>0.17 0.273</pos>
+                <origin>0 0.5</origin>
+                <size>.1 .028</size>
+                <horizontalAlignment>left</horizontalAlignment>
+                <direction>column</direction>
+                <lines>4</lines>
+                <itemsPerLine>1</itemsPerLine>
+                <slots>favorite</slots>
+                <customBadgeIcon badge="favorite">${rootpath}/_inc/images/yes.png</customBadgeIcon>
+                <zIndex>65</zIndex>
+            </badges>
+
             <image name="players-icon">
-                <pos>.1165 .323</pos>
+                <pos>.1165 .273</pos>
                 <origin>0 .5</origin>
                 <maxSize>.028 .03</maxSize>
                 <path>${rootpath}/_inc/images/icon-players.svg</path>
@@ -158,7 +187,7 @@
                 <zIndex>65</zIndex>
             </image>
             <text name="players">
-                <pos>.1365 .323</pos>
+                <pos>.1365 .273</pos>
                 <origin>0 .5</origin>
                 <size>.02 .018</size>
                 <fontSize>.03</fontSize>
@@ -168,41 +197,47 @@
                 <lineSpacing>1</lineSpacing>
                 <zIndex>65</zIndex>
             </text>
-            <badges name="badges">
-                <pos>0.17 0.323</pos>
-                <origin>0 0.5</origin>
-                <size>.25 .03</size>
-                <horizontalAlignment>left</horizontalAlignment>
-                <direction>row</direction>
-                <lines>1</lines>
-                <itemMargin>-1 .01</itemMargin>
-                <slots>collection, folder, favorite, completed, kidgame, broken, controller, altemulator, manual</slots>
-                <customBadgeIcon badge="collection">${rootpath}/_inc/images/badge-collection.svg</customBadgeIcon>
-                <customBadgeIcon badge="folder">${rootpath}/_inc/images/badge-folder.svg</customBadgeIcon>
-                <customBadgeIcon badge="favorite">${rootpath}/_inc/images/badge-favorite.svg</customBadgeIcon>
-                <customBadgeIcon badge="completed">${rootpath}/_inc/images/badge-completed.svg</customBadgeIcon>
-                <customBadgeIcon badge="kidgame">${rootpath}/_inc/images/badge-kidgame.svg</customBadgeIcon>
-                <customBadgeIcon badge="broken">${rootpath}/_inc/images/badge-broken.svg</customBadgeIcon>
-                <customBadgeIcon badge="controller">${rootpath}/_inc/images/badge-controller.svg</customBadgeIcon>
-                <customBadgeIcon badge="altemulator">${rootpath}/_inc/images/badge-altemulator.svg</customBadgeIcon>
-                <customBadgeIcon badge="manual">${rootpath}/_inc/images/badge-manual.svg</customBadgeIcon>
-                <controllerIconColor>FFFFFF</controllerIconColor>
-                <controllerSize>1</controllerSize>
+            <!--<image name="developer-icon">
+                <pos>.1765 .273</pos>
+                <origin>0 .5</origin>
+                <maxSize>.027 .027</maxSize>
+                <path>${rootpath}/_inc/images/icon-developer.svg</path>
+                <color>FFFFFF</color>
+                <metadataElement>true</metadataElement>
                 <zIndex>65</zIndex>
-            </badges>
+             </image>
+             <text name="developer">
+                <pos>.1965 .273</pos>
+                <origin>0 .5</origin>
+                <size>.1 .018</size>
+                <fontSize>.02</fontSize>
+                <metadata>developer</metadata>
+                <defaultValue>Unknown</defaultValue>
+                <color>FFFFFF</color>
+                <lineSpacing>1</lineSpacing>
+                <zIndex>65</zIndex>
+             </text>
+             <image name="publisher-icon">
+                <pos>.0265 .5605</pos>
+                <origin>0 .5</origin>
+                <maxSize>.027 .027</maxSize>
+                <path>${rootpath}/_inc/images/icon-publisher.svg</path>
+                <color>FFFFFF</color>
+                <metadataElement>true</metadataElement>
+                <zIndex>65</zIndex>
+             </image>
+             <text name="publisher">
+                <pos>.0465 .5605</pos>
+                <origin>0 .5</origin>
+                <size>.1 .018</size>
+                <fontSize>.02</fontSize>
+                <metadata>publisher</metadata>
+                <defaultValue>Unknown</defaultValue>
+                <color>FFFFFF</color>
+                <lineSpacing>1</lineSpacing>
+                <zIndex>65</zIndex>
+             </text>-->
 
-
-            <text name="descriptiontext">
-                <pos>0.023 0.345</pos>
-                <size>0.4 0.18</size>
-                <metadata>description</metadata>
-                <fontSize>0.024</fontSize>
-                <lineSpacing>1.1</lineSpacing>
-                <color>BBBBBB</color>
-                <verticalAlignment>top</verticalAlignment>
-                <container>true</container>
-                <zIndex>46</zIndex>
-            </text>
 
             <carousel name="gamelistCarousel">
                 <pos>.5 1</pos>
@@ -243,8 +278,8 @@
                 <color>BBBBBB</color>
                 <zIndex>65</zIndex>
             </gamelistinfo>
-        </view> 
-
+        </view>
+           
         
         <view name="system, gamelist">
             <helpsystem name="help">

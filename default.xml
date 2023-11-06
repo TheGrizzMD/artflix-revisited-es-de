@@ -34,7 +34,7 @@
             
             <text name="system-name">
                 <systemdata>fullname</systemdata>
-                <pos>0.053 0.16</pos>
+                <pos>0.053 0.21</pos>
                 <size>0.4 0.2</size>
                 <fontSize>0.065</fontSize>
                 <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -46,11 +46,11 @@
                 <containerResetDelay>2</containerResetDelay>
                 <letterCase>uppercase</letterCase>
             </text>
+
+
             <text name="gameCount">
-                <pos>0.053 0.31</pos>
+                <pos>0.053 0.36</pos>
                 <size>0.4 0</size>
-                <!--<pos>0.75 0.86</pos>
-                <size>0.2 0.2</size>-->
                 <systemdata>gamecount</systemdata>
                 <fontSize>0.024</fontSize>
                 <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -60,7 +60,7 @@
              </text>
             <text name="system-year">
                 <text>${systemReleaseYear}</text>
-                <pos>0.053 0.31</pos>
+                <pos>0.053 0.36</pos>
                 <size>0.4 0</size>
                 <fontSize>0.024</fontSize>
                 <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -70,7 +70,7 @@
                 <horizontalAlignment>right</horizontalAlignment>
             </text>
             <text name="system-description">
-                <pos>0.053 0.34</pos>
+                <pos>0.053 0.395</pos>
                 <size>0.4 0.18</size>
                 <text>${systemDescription}</text>
                 <fontSize>0.024</fontSize>
@@ -82,12 +82,11 @@
             <gameselector name="randomselection">
             </gameselector>
             <video name="systembackgroundvideo">
-                <pos>0.053 0.675</pos>
+                <pos>0.053 0.725</pos>
                 <size>0 0.3</size>
                 <origin>0 0.5</origin>
                 <zIndex>12</zIndex>
             </video>
-
 
 
             <carousel name="systemCarousel">
@@ -107,7 +106,6 @@
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
                 <selectedItemMargins>.02 .02</selectedItemMargins>
-                <!--<imageBrightness>.25</imageBrightness>-->
                 <reflectionsOpacity>.25</reflectionsOpacity>
                 <reflectionsFalloff>1.25</reflectionsFalloff>
                 <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
@@ -126,6 +124,7 @@
             </view>
         </aspectRatio>
     
+
         <view name="gamelist">
             <image name="gamelistbackgroundoverlay">
                 <pos>0 0</pos>
@@ -219,7 +218,7 @@
             </badges>
 
             <text name="descriptiontext">
-                <pos>0.053 0.34</pos>
+                <pos>0.053 0.345</pos>
                 <size>0.4 0.18</size>
                 <metadata>description</metadata>
                 <fontSize>0.024</fontSize>
@@ -229,47 +228,6 @@
                 <container>true</container>
                 <zIndex>46</zIndex>
             </text>
-
-            <!--<image name="developer-icon">
-                <pos>.1765 .273</pos>
-                <origin>0 .5</origin>
-                <maxSize>.027 .027</maxSize>
-                <path>${rootpath}/_inc/images/icon-developer.svg</path>
-                <color>FFFFFF</color>
-                <metadataElement>true</metadataElement>
-                <zIndex>65</zIndex>
-             </image>
-             <text name="developer">
-                <pos>.1965 .273</pos>
-                <origin>0 .5</origin>
-                <size>.1 .018</size>
-                <fontSize>.02</fontSize>
-                <metadata>developer</metadata>
-                <defaultValue>Unknown</defaultValue>
-                <color>FFFFFF</color>
-                <lineSpacing>1</lineSpacing>
-                <zIndex>65</zIndex>
-             </text>
-             <image name="publisher-icon">
-                <pos>.0265 .5605</pos>
-                <origin>0 .5</origin>
-                <maxSize>.027 .027</maxSize>
-                <path>${rootpath}/_inc/images/icon-publisher.svg</path>
-                <color>FFFFFF</color>
-                <metadataElement>true</metadataElement>
-                <zIndex>65</zIndex>
-             </image>
-             <text name="publisher">
-                <pos>.0465 .5605</pos>
-                <origin>0 .5</origin>
-                <size>.1 .018</size>
-                <fontSize>.02</fontSize>
-                <metadata>publisher</metadata>
-                <defaultValue>Unknown</defaultValue>
-                <color>FFFFFF</color>
-                <lineSpacing>1</lineSpacing>
-                <zIndex>65</zIndex>
-             </text>-->
 
              <video name="gamelistbackgroundvideo">
                 <pos>0.053 0.675</pos>

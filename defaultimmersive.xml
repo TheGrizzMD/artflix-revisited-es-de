@@ -13,7 +13,7 @@
             <origin>.5 .5</origin>
             <imageType>fanart, screenshot, titlescreen, cover</imageType>
             <pillarboxes>false</pillarboxes>
-            <delay>1</delay>
+            <delay>2</delay>
             <scrollFadeIn>true</scrollFadeIn>
             <zIndex>10</zIndex>
         </video>
@@ -26,7 +26,7 @@
             <origin>.5 .5</origin>
             <imageType>fanart, screenshot, titlescreen, cover</imageType>
             <pillarboxes>false</pillarboxes>
-            <delay>1</delay>
+            <delay>2</delay>
             <scrollFadeIn>true</scrollFadeIn>
             <zIndex>10</zIndex>
         </video>
