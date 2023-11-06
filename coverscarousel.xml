@@ -224,33 +224,40 @@
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
                 <horizontalOffset>-.375</horizontalOffset>
-                <verticalOffset>.25</verticalOffset>
+                <verticalOffset>.2</verticalOffset>
                 <reflections>true</reflections>
                 <reflectionsOpacity>.25</reflectionsOpacity>
-                <reflectionsFalloff>2</reflectionsFalloff>
+                <reflectionsFalloff>3</reflectionsFalloff>
                 <unfocusedItemOpacity>1</unfocusedItemOpacity>
                 <zIndex>50</zIndex>
             </carousel>
         
 
             <gamelistinfo name="gamelistInfo">
-                <pos>0.9 0.95</pos>
+                <pos>0.05 0.95</pos>
                 <size>w 0.02</size>
                 <fontSize>0.025</fontSize>
                 <fontPath>${rootpath}/_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
-                <horizontalAlignment>right</horizontalAlignment>
+                <horizontalAlignment>left</horizontalAlignment>
                 <verticalAlignment>bottom</verticalAlignment>
                 <color>BBBBBB</color>
                 <zIndex>65</zIndex>
             </gamelistinfo>
+
+            <image name="systemlogo">
+                <pos>.975 .94</pos>
+                <origin>1 .5</origin>
+                <maxSize>.16 .1</maxSize>
+                <path>${rootpath}/_inc/systems/logos/${system.theme}.svg</path>
+                <default>${rootpath}/_inc/systems/logos/${system.theme}.png</default>
+                <interpolation>linear</interpolation>
+                <zIndex>56</zIndex>
+             </image>
         </view> 
 
         
         <view name="system, gamelist">
             <helpsystem name="help">
-                <!--
-                    <pos>0.012 0.957</pos>
-                -->
                 <pos>0.5 0.96</pos>
                 <origin>0.5 0</origin>
                 <textColor>FFFFFF</textColor>
