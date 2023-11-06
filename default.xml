@@ -175,7 +175,7 @@
                 <zIndex>65</zIndex>
             </rating>
             <image name="players-icon">
-                <pos>.1465 .323</pos>
+                <pos>.1565 .323</pos>
                 <origin>0 .5</origin>
                 <maxSize>.028 .03</maxSize>
                 <path>${rootpath}/_inc/images/icon-players.svg</path>
@@ -184,7 +184,7 @@
                 <zIndex>65</zIndex>
             </image>
             <text name="players">
-                <pos>.1665 .323</pos>
+                <pos>.1765 .323</pos>
                 <origin>0 .5</origin>
                 <size>.02 .03</size>
                 <fontSize>.03</fontSize>
@@ -195,7 +195,7 @@
                 <zIndex>65</zIndex>
             </text>
             <badges name="badges">
-                <pos>0.195 0.323</pos>
+                <pos>0.205 0.323</pos>
                 <origin>0 0.5</origin>
                 <size>.25 .03</size>
                 <horizontalAlignment>left</horizontalAlignment>
