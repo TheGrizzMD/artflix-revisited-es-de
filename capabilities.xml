@@ -47,10 +47,4 @@
         <selectable>true</selectable>
         <transitions>fadeAndSlide</transitions>
     </variant>
-
-    <variant name="OldDefault">
-        <label>Old Default</label>
-        <selectable>true</selectable>
-        <transitions>fadeAndSlide</transitions>
-    </variant>
 </themeCapabilities>

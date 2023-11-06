@@ -19,8 +19,4 @@
     <variant name="CoversCarouselImmersive">
         <include>./coverscarouselimmersive.xml</include>
     </variant>
-
-    <variant name="OldDefault">
-        <include>./default_old.xml</include>
-    </variant>
 </theme>
