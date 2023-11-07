@@ -24,6 +24,7 @@
             <pos>.5 .5</pos>
             <size>1 0</size>
             <origin>.5 .5</origin>
+            <defaultImage>${rootpath}/_inc/images/defaultcover.png</defaultImage>
             <imageType>fanart, screenshot, titlescreen, cover</imageType>
             <pillarboxes>false</pillarboxes>
             <delay>2</delay>

@@ -190,6 +190,7 @@
                 <horizontalAlignment>left</horizontalAlignment>
                 <direction>row</direction>
                 <lines>1</lines>
+                <itemsPerLine>9</itemsPerLine>
                 <itemMargin>-1 .01</itemMargin>
                 <slots>collection, folder, favorite, completed, kidgame, broken, controller, altemulator, manual</slots>
                 <customBadgeIcon badge="collection">${rootpath}/_inc/images/badge-collection.svg</customBadgeIcon>
