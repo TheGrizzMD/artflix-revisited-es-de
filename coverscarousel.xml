@@ -212,7 +212,7 @@
                 <type>horizontal</type>
                 <imageType>cover</imageType>
                 <maxItemCount>8</maxItemCount>
-                <itemSize>0.125 0.25</itemSize>
+                <itemSize>0.12 0.25</itemSize>
                 <itemScale>1.5</itemScale>
                 <imageInterpolation>linear</imageInterpolation>
                 <itemAxisHorizontal>true</itemAxisHorizontal>
