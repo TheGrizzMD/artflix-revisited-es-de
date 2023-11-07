@@ -49,7 +49,7 @@
                 <fontSize>0.055</fontSize>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
-                <selectedItemMargins>1 1</selectedItemMargins>
+                <selectedItemMargins>.02 .02</selectedItemMargins>
                 <unfocusedItemOpacity>0.5</unfocusedItemOpacity>
                 <unfocusedItemDimming>.5</unfocusedItemDimming>
                 <fastScrolling>true</fastScrolling>
@@ -224,6 +224,7 @@
                 <fontSize>0.046</fontSize>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
+                <selectedItemMargins>.01 .01</selectedItemMargins>
                 <horizontalOffset>-.375</horizontalOffset>
                 <verticalOffset>.2</verticalOffset>
                 <reflections>true</reflections>
