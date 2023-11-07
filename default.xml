@@ -112,17 +112,8 @@
                 <unfocusedItemDimming>.5</unfocusedItemDimming>
                 <fastScrolling>true</fastScrolling>
             </carousel>
-            
         </view>
-        
-        <aspectRatio name="16:10">
-            <view name="system">
-                <image name="backgroundpromo">
-                    <size>0 1</size>
-                </image>
-            </view>
-        </aspectRatio>
-    
+          
 
         <view name="gamelist">
             <image name="gamelistbackgroundoverlay">

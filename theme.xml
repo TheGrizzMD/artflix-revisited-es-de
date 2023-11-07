@@ -6,6 +6,14 @@
 <theme>
     <variant name="Default">
         <include>./default.xml</include>
+        
+        <aspectRatio name="16:10">
+            <view name="system">
+                <image name="backgroundpromo">
+                    <size>0 1</size>
+                </image>
+            </view>
+        </aspectRatio>
     </variant>
 
     <variant name="DefaultImmersive">
