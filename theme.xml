@@ -7,6 +7,17 @@
     <variant name="Default">
         <include>./default.xml</include>
         
+        <view name="system">
+            <image name="backgroundpromo">
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${systemPromoImage}</path>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>9</zIndex>
+            </image>
+        </view>
+
         <aspectRatio name="16:10">
             <view name="system">
                 <image name="backgroundpromo">

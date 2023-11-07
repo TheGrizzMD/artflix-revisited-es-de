@@ -22,15 +22,6 @@
                 <color>959595FF</color>
                 <zIndex>11</zIndex>
             </image>
-            <image name="backgroundpromo">
-                <pos>0 0</pos>
-                <size>1 1</size>
-                <path>${systemPromoImage}</path>
-                <interpolation>linear</interpolation>
-                <scrollFadeIn>true</scrollFadeIn>
-                <zIndex>9</zIndex>
-            </image>
-
             
             <text name="system-name">
                 <systemdata>fullname</systemdata>
