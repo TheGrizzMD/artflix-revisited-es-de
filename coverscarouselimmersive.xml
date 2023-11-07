@@ -36,10 +36,6 @@
             <pos>.5 .5</pos>
             <size>1 0</size>
             <origin>.5 .5</origin>
-            <imageType>fanart, screenshot, titlescreen, cover</imageType>
-            <pillarboxes>false</pillarboxes>
-            <delay>2</delay>
-            <scrollFadeIn>true</scrollFadeIn>
             <zIndex>10</zIndex>
         </video>
     </view>

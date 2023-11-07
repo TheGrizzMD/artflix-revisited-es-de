@@ -6,25 +6,18 @@
 <theme>
     <variant name="Default">
         <include>./default.xml</include>
-        
-        <view name="system">
-            <image name="backgroundpromo">
+
+        <view name="gamelist">
+            <image name="gamelistfanart">
                 <pos>0 0</pos>
                 <size>1 1</size>
-                <path>${systemPromoImage}</path>
+                <imageType>fanart</imageType>
+                <default>${rootpath}/_inc/images/defaultcover.png</default>
                 <interpolation>linear</interpolation>
                 <scrollFadeIn>true</scrollFadeIn>
                 <zIndex>9</zIndex>
             </image>
         </view>
-
-        <aspectRatio name="16:10">
-            <view name="system">
-                <image name="backgroundpromo">
-                    <size>0 1</size>
-                </image>
-            </view>
-        </aspectRatio>
     </variant>
 
     <variant name="DefaultImmersive">

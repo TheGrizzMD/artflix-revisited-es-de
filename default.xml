@@ -22,6 +22,15 @@
                 <color>959595FF</color>
                 <zIndex>11</zIndex>
             </image>
+            <image name="backgroundpromo">
+                <pos>0 0</pos>
+                <size>1 1</size>
+                <path>${systemPromoImage}</path>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>9</zIndex>
+            </image>
+
             
             <text name="system-name">
                 <systemdata>fullname</systemdata>
@@ -103,8 +112,17 @@
                 <unfocusedItemDimming>.5</unfocusedItemDimming>
                 <fastScrolling>true</fastScrolling>
             </carousel>
+            
         </view>
-          
+
+        <aspectRatio name="16:10">
+            <view name="system">
+                <image name="backgroundpromo">
+                    <pos>-.03 0</pos>
+                    <size>0 1</size>
+                </image>
+            </view>
+        </aspectRatio>
 
         <view name="gamelist">
             <image name="gamelistbackgroundoverlay">
@@ -121,16 +139,6 @@
                 <zIndex>55</zIndex>
             </image>
             
-            <image name="gamelistfanart">
-                <pos>0 0</pos>
-                <size>1 1</size>
-                <imageType>fanart</imageType>
-                <default>${rootpath}/_inc/images/defaultcover.png</default>
-                <interpolation>linear</interpolation>
-                <scrollFadeIn>true</scrollFadeIn>
-                <zIndex>9</zIndex>
-            </image>
-
             <text name="game-name">
                 <metadata>name</metadata>
                 <pos>0.053 0.16</pos>
