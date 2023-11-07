@@ -221,6 +221,7 @@
                 <fastScrolling>true</fastScrolling>
                 <color>00000000</color>
                 <textColor>BBBBBB</textColor>
+                <textBackgroundColor>000000FF</textBackgroundColor>
                 <fontSize>0.046</fontSize>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
