@@ -18,6 +18,14 @@
                 <zIndex>9</zIndex>
             </image>
         </view>
+
+        <aspectRatio name="16:10">
+            <view name="gamelist">
+                <image name="gamelistfanart">
+                    <size>0 1</size>
+                </image>
+            </view>
+        </aspectRatio>
     </variant>
 
     <variant name="DefaultImmersive">

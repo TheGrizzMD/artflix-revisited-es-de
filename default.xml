@@ -118,7 +118,6 @@
         <aspectRatio name="16:10">
             <view name="system">
                 <image name="backgroundpromo">
-                    <pos>-.03 0</pos>
                     <size>0 1</size>
                 </image>
             </view>
