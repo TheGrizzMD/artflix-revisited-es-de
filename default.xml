@@ -82,7 +82,7 @@
             <gameselector name="randomselection">
             </gameselector>
             <video name="systembackgroundvideo">
-                <pos>.053 .65</pos>
+                <pos>.053 .6725</pos>
                 <size>0 0.4</size>
                 <origin>0 0.5</origin>
                 <zIndex>12</zIndex>
