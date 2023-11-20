@@ -34,7 +34,7 @@
             
             <text name="system-name">
                 <systemdata>fullname</systemdata>
-                <pos>0.053 0.21</pos>
+                <pos>0.053 0.11</pos>
                 <size>0.4 0.2</size>
                 <fontSize>0.065</fontSize>
                 <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -49,7 +49,7 @@
 
 
             <text name="gameCount">
-                <pos>0.053 0.36</pos>
+                <pos>0.053 0.26</pos>
                 <size>0.4 0</size>
                 <systemdata>gamecount</systemdata>
                 <fontSize>0.024</fontSize>
@@ -60,7 +60,7 @@
              </text>
             <text name="system-year">
                 <text>${systemReleaseYear}</text>
-                <pos>0.053 0.36</pos>
+                <pos>0.053 0.26</pos>
                 <size>0.4 0</size>
                 <fontSize>0.024</fontSize>
                 <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -70,7 +70,7 @@
                 <horizontalAlignment>right</horizontalAlignment>
             </text>
             <text name="system-description">
-                <pos>0.053 0.395</pos>
+                <pos>.053 .295</pos>
                 <size>0.4 0.18</size>
                 <text>${systemDescription}</text>
                 <fontSize>0.024</fontSize>
@@ -82,8 +82,8 @@
             <gameselector name="randomselection">
             </gameselector>
             <video name="systembackgroundvideo">
-                <pos>0.053 0.725</pos>
-                <size>0 0.3</size>
+                <pos>.053 .65</pos>
+                <size>0 0.4</size>
                 <origin>0 0.5</origin>
                 <zIndex>12</zIndex>
             </video>
@@ -140,7 +140,7 @@
             
             <text name="game-name">
                 <metadata>name</metadata>
-                <pos>0.053 0.16</pos>
+                <pos>0.053 0.11</pos>
                 <size>0.4 0.2</size>
                 <fontSize>0.065</fontSize>
                 <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
@@ -154,7 +154,7 @@
             </text>
 
             <rating name="ratinggraphic">
-                <pos>.053 .322</pos>
+                <pos>.053 .272</pos>
                 <origin>0 0.5</origin>
                 <size>0 0.03</size>
                 <filledPath>${rootpath}/_inc/images/star_filled.svg</filledPath>
@@ -163,7 +163,7 @@
                 <zIndex>65</zIndex>
             </rating>
             <image name="players-icon">
-                <pos>.1565 .323</pos>
+                <pos>.1565 .273</pos>
                 <origin>0 .5</origin>
                 <maxSize>.028 .03</maxSize>
                 <path>${rootpath}/_inc/images/icon-players.svg</path>
@@ -172,7 +172,7 @@
                 <zIndex>65</zIndex>
             </image>
             <text name="players">
-                <pos>.1765 .323</pos>
+                <pos>.1765 .273</pos>
                 <origin>0 .5</origin>
                 <size>.02 .03</size>
                 <fontSize>.03</fontSize>
@@ -183,7 +183,7 @@
                 <zIndex>65</zIndex>
             </text>
             <badges name="badges">
-                <pos>0.205 0.323</pos>
+                <pos>.205 .273</pos>
                 <origin>0 0.5</origin>
                 <size>.25 .03</size>
                 <horizontalAlignment>left</horizontalAlignment>
@@ -207,7 +207,7 @@
             </badges>
 
             <text name="descriptiontext">
-                <pos>0.053 0.345</pos>
+                <pos>.053 .295</pos>
                 <size>0.4 0.18</size>
                 <metadata>description</metadata>
                 <fontSize>0.024</fontSize>
@@ -219,8 +219,8 @@
             </text>
 
              <video name="gamelistbackgroundvideo">
-                <pos>0.053 0.675</pos>
-                <size>0 0.3</size>
+                <pos>0.053 0.6725</pos>
+                <size>0 0.4</size>
                 <origin>0 0.5</origin>
                 <imageType>cover</imageType>
                 <delay>2</delay>

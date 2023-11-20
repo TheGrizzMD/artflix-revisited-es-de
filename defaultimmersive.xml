@@ -31,6 +31,14 @@
             <scrollFadeIn>true</scrollFadeIn>
             <zIndex>10</zIndex>
         </video>
+
+        <image name="gamelistcover">
+            <pos>0.053 0.6725</pos>
+            <size>0 0.4</size>
+            <origin>0 0.5</origin>
+            <imageType>cover</imageType>
+            <zIndex>46</zIndex>
+        </image>
     </view>
 
     <aspectRatio name="16:10">
