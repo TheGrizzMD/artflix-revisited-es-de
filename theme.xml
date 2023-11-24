@@ -9,8 +9,9 @@
 
         <view name="gamelist">
             <image name="gamelistfanart">
-                <pos>0 0</pos>
-                <size>1 1</size>
+                <pos>1 0</pos>
+                <origin>1 0</origin>
+                <size>0 1</size>
                 <imageType>fanart</imageType>
                 <default>${rootpath}/_inc/images/defaultcover.png</default>
                 <interpolation>linear</interpolation>
@@ -18,14 +19,6 @@
                 <zIndex>9</zIndex>
             </image>
         </view>
-
-        <aspectRatio name="16:10">
-            <view name="gamelist">
-                <image name="gamelistfanart">
-                    <size>0 1</size>
-                </image>
-            </view>
-        </aspectRatio>
     </variant>
 
     <variant name="DefaultImmersive">
