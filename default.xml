@@ -19,7 +19,6 @@
                 <pos>0 0</pos>
                 <size>1 1</size>
                 <path>${rootpath}/_inc/images/defaultsystemgrad.png</path>
-                <color>959595FF</color>
                 <zIndex>11</zIndex>
             </image>
             <image name="backgroundpromo">
@@ -123,12 +122,27 @@
             </view>
         </aspectRatio>
 
+        <aspectRatio name="19.5:9">
+            <view name="system">
+                <image name="backgroundpromo">
+                    <pos>1 0</pos>
+                    <size>0 1</size>
+                    <origin>1 0</origin>
+                </image>
+                <image name="wideoverlayleft">
+                    <pos>0 0</pos>
+                    <size>0 1</size>
+                    <path>${rootpath}/_inc/images/wideoverlayleft.png</path>
+                    <zIndex>11</zIndex>
+                </image>
+            </view>
+        </aspectRatio>
+
         <view name="gamelist">
             <image name="gamelistbackgroundoverlay">
                 <pos>0 0</pos>
                 <size>1 1</size>
                 <path>${rootpath}/_inc/images/defaultsystemgrad.png</path>
-                <color>959595FF</color>
                 <zIndex>11</zIndex>
             </image>
             <image name="gamelistforegroundoverlay">
@@ -277,6 +291,15 @@
              </image>
         </view> 
         
+        <view name="gamelist">
+            <image name="wideoverlayleft">
+                <pos>0 0</pos>
+                <size>0 1</size>
+                <path>${rootpath}/_inc/images/wideoverlayleft.png</path>
+                <zIndex>11</zIndex>
+            </image>
+        </view>
+
         <view name="system, gamelist">
             <helpsystem name="help">
                 <pos>0.5 0.96</pos>

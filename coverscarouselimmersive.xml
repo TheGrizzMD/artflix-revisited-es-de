@@ -44,4 +44,27 @@
             </video>
         </view>
     </aspectRatio>
+
+    <aspectRatio name="19.5:9">
+        <view name="system">
+            <video name="systembackgroundvideo">
+                <pos>1 .5</pos>
+                <size>.82 0</size>
+                <origin>1 .5</origin>
+            </video>
+        </view>
+        <view name="gamelist">
+            <video name="gamevideo">
+                <pos>1 .5</pos>
+                <size>.82 0</size>
+                <origin>1 .5</origin>
+            </video>
+            <image name="wideoverlayleft">
+                <pos>0 0</pos>
+                <size>0 1</size>
+                <path>${rootpath}/_inc/images/wideoverlayleft.png</path>
+                <zIndex>11</zIndex>
+            </image>
+        </view>
+    </aspectRatio>
 </theme>

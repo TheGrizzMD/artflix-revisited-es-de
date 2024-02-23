@@ -54,4 +54,22 @@
         </view>
     </aspectRatio>
 
+    <aspectRatio name="19.5:9">
+        <view name="system">
+            <video name="systembackgroundvideo">
+                <pos>1 .5</pos>
+                <size>.82 0</size>
+                <origin>1 .5</origin>
+            </video>
+        </view>
+        <view name="gamelist">
+            <video name="gamelistbackgroundvideo">
+                <pos>1 .5</pos>
+                <size>.82 0</size>
+                <origin>1 .5</origin>
+            </video>
+        </view>
+    </aspectRatio>
+
+
 </theme>
