@@ -67,4 +67,17 @@
             </image>
         </view>
     </aspectRatio>
+
+    <aspectRatio name="4:3">
+        <view name="system">
+            <video name="systembackgroundvideo">
+                <size>1.334 0</size>
+            </video>
+        </view>
+        <view name="gamelist">
+            <video name="gamevideo">
+                <size>1.334 0</size>
+            </video>
+        </view>
+    </aspectRatio>
 </theme>

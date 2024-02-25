@@ -121,6 +121,16 @@
             </view>
         </aspectRatio>
 
+        <aspectRatio name="4:3">
+            <view name="system">
+                <image name="backgroundpromo">
+                    <pos>1.15 0</pos>
+                    <size>0 1</size>
+                    <origin>1 0</origin>
+                </image>
+            </view>
+        </aspectRatio>
+
         <view name="gamelist">
             <image name="gamelistbackgroundoverlay">
                 <pos>0 0</pos>
@@ -283,6 +293,21 @@
                 <carousel name="gamelistCarousel">
                     <maxItemCount>9</maxItemCount>
                 </carousel>
+            </view>
+        </aspectRatio>
+
+        <aspectRatio name="4:3">
+            <view name="gamelist">
+                <image name="players-icon">
+                    <pos>.1445 .323</pos>
+                </image>
+                <text name="players">
+                    <pos>.1695 .323</pos>
+                    <size>.03 .03</size>
+                </text>
+                <badges name="badges">
+                    <pos>.22 .323</pos>
+                </badges>
             </view>
         </aspectRatio>
         

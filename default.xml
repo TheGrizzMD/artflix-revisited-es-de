@@ -122,6 +122,22 @@
             </view>
         </aspectRatio>
 
+        <aspectRatio name="4:3">
+            <view name="system">
+                <image name="backgroundpromo">
+                    <pos>1.15 0</pos>
+                    <size>0 1</size>
+                    <origin>1 0</origin>
+                </image>
+
+                <carousel name="systemCarousel">
+                    <pos>.95 0.5</pos>
+                    <size>0.35 1</size>
+                    <itemSize>0.25 0.125</itemSize>
+                </carousel>
+            </view>
+        </aspectRatio>
+
         <aspectRatio name="19.5:9">
             <view name="system">
                 <image name="backgroundpromo">
@@ -288,10 +304,8 @@
                 <default>${rootpath}/_inc/systems/logos/${system.theme}.png</default>
                 <interpolation>linear</interpolation>
                 <zIndex>56</zIndex>
-             </image>
-        </view> 
+             </image> 
         
-        <view name="gamelist">
             <image name="wideoverlayleft">
                 <pos>0 0</pos>
                 <size>0 1</size>
@@ -314,4 +328,28 @@
                 <opacity>.35</opacity>
             </helpsystem>
         </view>
+
+    <aspectRatio name="4:3">
+        <view name="gamelist">
+            <image name="players-icon">
+                <pos>.175 .273</pos>
+            </image>
+            <text name="players">
+                <pos>.2 .273</pos>
+                <size>.03 .03</size>
+            </text>
+            <badges name="badges">
+                <pos>.24 .273</pos>
+            </badges>
+
+            <carousel name="gamelistCarousel">
+                <itemSize>0.2 0.125</itemSize>
+                <horizontalOffset>0.45</horizontalOffset>
+            </carousel>
+
+            <helpsystem name="help">
+                <pos>0.53 0.96</pos>
+            </helpsystem>
+        </view>
+    </aspectRatio>
     </theme>
