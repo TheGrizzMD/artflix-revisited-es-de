@@ -14,6 +14,52 @@
             <systemPromoImage>${rootpath}/_inc/systems/fanart/${system.theme}.jpg</systemPromoImage>
         </variables>
     
+        <fontSize name="medium">
+            <variables>
+                <gameLogoPos>0.023 0.305</gameLogoPos>
+                <gameLogoMaxSize>0.3 0.2</gameLogoMaxSize>
+
+                <ratingGraphicPos>.023 .322</ratingGraphicPos>
+
+                <playersIconPos>.1265 .323</playersIconPos>
+
+                <playersPos>.1465 .323</playersPos>
+
+                <badgesPos>0.18 0.323</badgesPos>
+
+                <gameDescriptionVisible>true</gameDescriptionVisible>
+                
+                <gameCarouselSize>01 .45</gameCarouselSize>
+                <gameCarouselMaxItemCount>8</gameCarouselMaxItemCount>
+                <gameCarouselItemSize>0.12 0.25</gameCarouselItemSize>
+                <gameCarouselSelectedItemMargins>.01 .01</gameCarouselSelectedItemMargins>
+                <gameCarouselHorizontalOffset>-.375</gameCarouselHorizontalOffset>
+            </variables>
+        </fontSize>
+            
+        <fontSize name="large">
+            <variables>
+                <gameLogoPos>0.023 0.355</gameLogoPos>
+                <gameLogoMaxSize>0.3 0.3</gameLogoMaxSize>
+
+                <ratingGraphicPos>.023 .372</ratingGraphicPos>
+
+                <playersIconPos>.1265 .373</playersIconPos>
+
+                <playersPos>.1465 .373</playersPos>
+
+                <badgesPos>0.18 0.373</badgesPos>
+
+                <gameDescriptionVisible>false</gameDescriptionVisible>
+
+                <gameCarouselSize>1 .55</gameCarouselSize>
+                <gameCarouselMaxItemCount>6</gameCarouselMaxItemCount>
+                <gameCarouselItemSize>0.17 0.3</gameCarouselItemSize>
+                <gameCarouselSelectedItemMargins>.05 .05</gameCarouselSelectedItemMargins>
+                <gameCarouselHorizontalOffset>-.35</gameCarouselHorizontalOffset>
+            </variables>
+        </fontSize>
+
         <view name="system">
             <image name="systembackgroundoverlay">
                 <pos>0 0</pos>
@@ -152,9 +198,9 @@
             </video>
             
             <image name="game-logo">
-                <pos>0.023 0.305</pos>
+                <pos>${gameLogoPos}</pos>
                 <origin>0 1</origin>
-                <maxSize>0.3 0.2</maxSize>
+                <maxSize>${gameLogoMaxSize}</maxSize>
                 <imageType>marquee</imageType>
                 <scrollFadeIn>true</scrollFadeIn>
                 <zIndex>46</zIndex>
@@ -162,7 +208,7 @@
 
 
             <rating name="ratinggraphic">
-                <pos>.023 .322</pos>
+                <pos>${ratingGraphicPos}</pos>
                 <origin>0 0.5</origin>
                 <size>0 0.03</size>
                 <filledPath>${rootpath}/_inc/images/star_filled.svg</filledPath>
@@ -171,7 +217,7 @@
                 <zIndex>65</zIndex>
             </rating>
             <image name="players-icon">
-                <pos>.1265 .323</pos>
+                <pos>${playersIconPos}</pos>
                 <origin>0 .5</origin>
                 <maxSize>.028 .03</maxSize>
                 <path>${rootpath}/_inc/images/icon-players.svg</path>
@@ -180,7 +226,7 @@
                 <zIndex>65</zIndex>
             </image>
             <text name="players">
-                <pos>.1465 .323</pos>
+                <pos>${playersPos}</pos>
                 <origin>0 .5</origin>
                 <size>.02 .018</size>
                 <fontSize>.03</fontSize>
@@ -191,7 +237,7 @@
                 <zIndex>65</zIndex>
             </text>
             <badges name="badges">
-                <pos>0.18 0.323</pos>
+                <pos>${badgesPos}</pos>
                 <origin>0 0.5</origin>
                 <size>.25 .03</size>
                 <horizontalAlignment>left</horizontalAlignment>
@@ -224,17 +270,18 @@
                 <color>BBBBBB</color>
                 <verticalAlignment>top</verticalAlignment>
                 <container>true</container>
+                <visible>${gameDescriptionVisible}</visible>
                 <zIndex>46</zIndex>
             </text>
 
             <carousel name="gamelistCarousel">
                 <pos>.5 1</pos>
                 <origin>.5 1</origin>
-                <size>1 .45</size>
+                <size>${gameCarouselSize}</size>
                 <type>horizontal</type>
                 <imageType>cover</imageType>
-                <maxItemCount>8</maxItemCount>
-                <itemSize>0.12 0.25</itemSize>
+                <maxItemCount>${gameCarouselMaxItemCount}</maxItemCount>
+                <itemSize>${gameCarouselItemSize}</itemSize>
                 <itemScale>1.5</itemScale>
                 <imageInterpolation>linear</imageInterpolation>
                 <itemAxisHorizontal>true</itemAxisHorizontal>
@@ -247,8 +294,8 @@
                 <fontSize>0.046</fontSize>
                 <letterCase>uppercase</letterCase>
                 <lineSpacing>1.2</lineSpacing>
-                <selectedItemMargins>.01 .01</selectedItemMargins>
-                <horizontalOffset>-.375</horizontalOffset>
+                <selectedItemMargins>${gameCarouselSelectedItemMargins}</selectedItemMargins>
+                <horizontalOffset>${gameCarouselHorizontalOffset}</horizontalOffset>
                 <verticalOffset>.2</verticalOffset>
                 <reflections>true</reflections>
                 <reflectionsOpacity>.25</reflectionsOpacity>

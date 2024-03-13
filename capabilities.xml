@@ -10,6 +10,9 @@
     <aspectRatio>19.5:9</aspectRatio>
     <aspectRatio>4:3</aspectRatio>
 
+    <fontSize>medium</fontSize>
+    <fontSize>large</fontSize>
+
     <transitions name="fadeAndSlide">
         <label>Default</label>
         <selectable>false</selectable>
