@@ -1,5 +1,5 @@
 <!--
-    Variant - Default
+    Variant - Default Immersive
 -->
 
 <theme> 
@@ -74,12 +74,12 @@
     <aspectRatio name="4:3">
         <view name="system">
             <video name="systembackgroundvideo">
-                <size>1.334 0</size>
+                <size>0 1</size>
             </video>
         </view>
         <view name="gamelist">
             <video name="gamelistbackgroundvideo">
-                <size>1.334 0</size>
+                <size>0 1</size>
             </video>
         </view>
     </aspectRatio>

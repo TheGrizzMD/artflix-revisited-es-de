@@ -18,6 +18,109 @@
                 <scrollFadeIn>true</scrollFadeIn>
                 <zIndex>9</zIndex>
             </image>
+
+            <carousel name="gamelistCarousel">
+                <pos>0 0</pos>
+                <size>1.45 1</size>
+                <type>verticalWheel</type>
+                <imageType>marquee</imageType>
+                <itemsBeforeCenter>5</itemsBeforeCenter>
+                <itemsAfterCenter>5</itemsAfterCenter>
+                <itemSize>0.15 0.125</itemSize>
+                <itemScale>1.5</itemScale>
+                <itemRotation>-7</itemRotation>
+                <imageInterpolation>linear</imageInterpolation>
+                <itemRotationOrigin>4.03 0.5</itemRotationOrigin>
+                <itemAxisHorizontal>true</itemAxisHorizontal>
+                <itemHorizontalAlignment>center</itemHorizontalAlignment>
+                <itemVerticalAlignment>center</itemVerticalAlignment>
+                <wheelHorizontalAlignment>left</wheelHorizontalAlignment>
+                <horizontalOffset>0.50</horizontalOffset>
+                <fastScrolling>true</fastScrolling>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.046</fontSize>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1.2</lineSpacing>
+                <unfocusedItemOpacity>1</unfocusedItemOpacity>
+                <zIndex>50</zIndex>
+            </carousel>
+        </view>
+
+        <aspectRatio name="4:3">
+            <view name="gamelist">
+                <image name="gamelistfanart">
+                    <pos>1.15 0</pos>
+                </image>
+
+                <carousel name="gamelistCarousel">
+                    <itemSize>0.2 0.125</itemSize>
+                    <horizontalOffset>0.45</horizontalOffset>
+                </carousel>
+            </view>
+        </aspectRatio>
+    </variant>
+
+    <variant name="DefaultImmersive">
+        <include>./defaultimmersive.xml</include>
+
+        <view name="gamelist">
+            <carousel name="gamelistCarousel">
+                <pos>0 0</pos>
+                <size>1.45 1</size>
+                <type>verticalWheel</type>
+                <imageType>marquee</imageType>
+                <itemsBeforeCenter>5</itemsBeforeCenter>
+                <itemsAfterCenter>5</itemsAfterCenter>
+                <itemSize>0.15 0.125</itemSize>
+                <itemScale>1.5</itemScale>
+                <itemRotation>-7</itemRotation>
+                <imageInterpolation>linear</imageInterpolation>
+                <itemRotationOrigin>4.03 0.5</itemRotationOrigin>
+                <itemAxisHorizontal>true</itemAxisHorizontal>
+                <itemHorizontalAlignment>center</itemHorizontalAlignment>
+                <itemVerticalAlignment>center</itemVerticalAlignment>
+                <wheelHorizontalAlignment>left</wheelHorizontalAlignment>
+                <horizontalOffset>0.50</horizontalOffset>
+                <fastScrolling>true</fastScrolling>
+                <color>00000000</color>
+                <textColor>BBBBBB</textColor>
+                <fontSize>0.046</fontSize>
+                <letterCase>uppercase</letterCase>
+                <lineSpacing>1.2</lineSpacing>
+                <unfocusedItemOpacity>1</unfocusedItemOpacity>
+                <zIndex>50</zIndex>
+            </carousel>
+        </view>
+
+        <aspectRatio name="4:3">
+            <view name="gamelist">
+                <image name="gamelistfanart">
+                    <pos>1.15 0</pos>
+                </image>
+
+                <carousel name="gamelistCarousel">
+                    <itemSize>0.2 0.125</itemSize>
+                    <horizontalOffset>0.45</horizontalOffset>
+                </carousel>
+            </view>
+        </aspectRatio>
+    </variant>
+
+    <variant name="Textlist">
+        <include>./textlist.xml</include>
+
+        <view name="gamelist">
+            <image name="gamelistfanart">
+                <pos>1 0</pos>
+                <origin>1 0</origin>
+                <size>0 1</size>
+                <imageType>fanart</imageType>
+                <default>${rootpath}/_inc/images/defaultcover.png</default>
+                <interpolation>linear</interpolation>
+                <scrollFadeIn>true</scrollFadeIn>
+                <zIndex>9</zIndex>
+            </image>
         </view>
 
         <aspectRatio name="4:3">
@@ -27,10 +130,6 @@
                 </image>
             </view>
         </aspectRatio>
-    </variant>
-
-    <variant name="DefaultImmersive">
-        <include>./defaultimmersive.xml</include>
     </variant>
 
     <variant name="CoversCarousel">

@@ -41,6 +41,12 @@
         <transitions>fadeAndSlide</transitions>
     </variant>
 
+    <variant name="Textlist">
+        <label>Textlist (WIP)</label>
+        <selectable>true</selectable>
+        <transitions>fadeAndSlide</transitions>
+    </variant>
+
     <variant name="CoversCarousel">
         <label>Covers Carousel</label>
         <selectable>true</selectable>
