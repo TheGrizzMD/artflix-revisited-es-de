@@ -1,0 +1,12 @@
+<theme>
+   <variables>
+      <systemDescription>Vircon32 is a new game console, created from scratch. It is a 32-bit system created with the goal of being as simple as possible, but still having enough features to support full, elaborate games.
+
+As the name implies, Vircon32 is a 32-bit virtual console: it is meant as a standard that could be implemented either in software or hardware.</systemDescription>
+      <systemManufacturer>Carra</systemManufacturer>
+      <systemReleaseYear>2021</systemReleaseYear>
+      <systemReleaseDate>2021-02-01</systemReleaseDate>
+      <systemReleaseDateFormated>Febuary 1, 2021</systemReleaseDateFormated>
+      <systemHardwareType>Engine</systemHardwareType>
+   </variables>
+</theme>

@@ -1,2 +1,4 @@
 imageOverrides/
 .vs/
+.DS_Store
+*~

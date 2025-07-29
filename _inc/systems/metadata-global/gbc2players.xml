@@ -1,0 +1,16 @@
+<theme>
+   <variables>
+      <systemDescription>Nintendo revolutionized multiplayer gaming on handheld devices in 1989 through the use of the Game Link Cable included with the original Game Boy. Over the years, the Game Link Cable evolved to support newer models, including the Game Boy Color, which inherited 2-player competitive and collaborative play. Similar to the original Game Boy, both Game Boy Color units must each have the same Game Pak featuring two-player Game Link mode. This requirement would not change until 2025 with the advent of the GameShare feature on the Switch 2.</systemDescription>
+      <systemManufacturer>Nintendo</systemManufacturer>
+      <systemReleaseYear>1998</systemReleaseYear>
+      <systemReleaseDate>1998-10-21</systemReleaseDate>
+      <systemReleaseDateFormated>October 21, 1998</systemReleaseDateFormated>
+      <systemHardwareType>Portable</systemHardwareType>
+<!-- gbc -->
+      <systemColor>F3B92A</systemColor>
+      <systemColorPalette1>F63B77</systemColorPalette1>
+      <systemColorPalette2>2D308E</systemColorPalette2>
+      <systemColorPalette3>00B3DE</systemColorPalette3>
+      <systemColorPalette4>7642B6</systemColorPalette4>
+   </variables>
+</theme>

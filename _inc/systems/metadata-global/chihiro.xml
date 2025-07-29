@@ -1,0 +1,14 @@
+<theme>
+   <variables>
+      <systemDescription>The Sega Chihiro is an arcade system produced by Sega in 2003 as a successor to the Naomi arcade system. The Microsoft Xbox is based on the Chihiro design, but the Chihiro supports up to 1GB of RAM and uses GD-ROM media instead of DVDs. In theory, Chihiro's PowerPC architecture allowed for easier porting of games to the Xbox, contributing to its significance in the evolution of arcade gaming technology.</systemDescription>
+      <systemManufacturer>Sega</systemManufacturer>
+      <systemReleaseYear>2003</systemReleaseYear>
+      <systemHardwareType>Console</systemHardwareType>
+<!-- xbox -->
+      <systemColor>68B653</systemColor>
+      <systemColorPalette1>CDDF01</systemColorPalette1>
+      <systemColorPalette2>9ABF5E</systemColorPalette2>
+      <systemColorPalette3>534F57</systemColorPalette3>
+      <systemColorPalette4>000000</systemColorPalette4>
+   </variables>
+</theme>
