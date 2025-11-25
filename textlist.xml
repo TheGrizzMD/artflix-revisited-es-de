@@ -167,7 +167,7 @@
 
         <textlist name="game-textlist">
             <pos>0.025 0.025</pos>
-            <size>.4 .9</size>
+            <size>.4 .85</size>
             <selectorWidth>0</selectorWidth>
             <fontPath>${rootpath}/_inc/fonts/Exo2-BoldCondensed.otf</fontPath>
             <primaryColor>777777</primaryColor>
@@ -204,7 +204,7 @@
 
         <image name="gamelistcover">
             <pos>0.975 0.875</pos>
-            <size>0 0.25</size>
+            <size>0 0.225</size>
             <origin>1 1</origin>
             <imageType>cover</imageType>
             <zIndex>46</zIndex>
@@ -281,20 +281,20 @@
             <zIndex>46</zIndex>
         </text>
 
-            <video name="gamevideo">
-                <pos>1 0</pos>
-                <cropSize>.6 .75</cropSize>
-                <origin>1 0</origin>
-                <defaultImage>${rootpath}/_inc/images/defaultcover.png</defaultImage>
-                <imageType>fanart, screenshot, titlescreen, cover</imageType>
-                <pillarboxes>false</pillarboxes>
-                <delay>2</delay>
-                <scrollFadeIn>true</scrollFadeIn>
-                <zIndex>30</zIndex>
-            </video>
+        <video name="gamevideo">
+            <pos>1 0</pos>
+            <cropSize>.6 .75</cropSize>
+            <origin>1 0</origin>
+            <defaultImage>${rootpath}/_inc/images/defaultcover.png</defaultImage>
+            <imageType>fanart, screenshot, titlescreen, cover</imageType>
+            <pillarboxes>false</pillarboxes>
+            <delay>2</delay>
+            <scrollFadeIn>true</scrollFadeIn>
+            <zIndex>30</zIndex>
+        </video>
     
         <gamelistinfo name="gamelistInfo">
-            <pos>0.05 0.95</pos>
+            <pos>0.9 0.95</pos>
             <size>w 0.02</size>
             <fontSize>0.025</fontSize>
             <fontPath>${rootpath}/_inc/fonts/Exo2-RegularCondensed.otf</fontPath>
@@ -305,8 +305,8 @@
         </gamelistinfo>
 
         <image name="systemlogo">
-            <pos>.985 .94</pos>
-            <origin>1 .5</origin>
+            <pos>.015 .94</pos>
+            <origin>0 .5</origin>
             <maxSize>.16 .1</maxSize>
             <path>${rootpath}/_inc/systems/logos/${system.theme}.svg</path>
             <default>${rootpath}/_inc/systems/logos/${system.theme}.png</default>

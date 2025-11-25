@@ -42,7 +42,7 @@
     </variant>
 
     <variant name="Textlist">
-        <label>Textlist (WIP)</label>
+        <label>Textlist</label>
         <selectable>true</selectable>
         <transitions>fadeAndSlide</transitions>
     </variant>
